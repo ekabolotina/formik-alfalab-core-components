@@ -7,7 +7,7 @@ jobs:
       - name: Set up the environment
         uses: mskelton/setup-yarn@v1
         with:
-          node-version: 14.15.0
+          node-version: 14.20.0
 
       - name: Lint code
         run: yarn run lint
