@@ -1,0 +1,8 @@
+node_modules
+dist
+
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+.idea
+yarn-error.log
