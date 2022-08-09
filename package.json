@@ -65,5 +65,9 @@
     },
     "files": [
         "dist"
+    ],
+    "keywords": [
+        "formik",
+        "react"
     ]
 }
