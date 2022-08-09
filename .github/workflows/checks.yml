@@ -1,7 +1,7 @@
 name: Checks
 on: [pull_request]
 jobs:
-  lint:
+  check:
     runs-on: ubuntu-latest
     steps:
       - name: Set up the environment
@@ -11,6 +11,9 @@ jobs:
 
       - name: Lint code
         run: yarn run lint
+
+      - name: Build
+        run: yarn run build
 
       - name: Unit test
         run: yarn run test
