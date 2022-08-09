@@ -7,8 +7,48 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
-      - name: Bump version and push tag
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Set up the environment
+        uses: mskelton/setup-yarn@v1
+        with:
+          node-version: ${{ secrets.NODE_VERSION }}
+
+      - name: Setup git config
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"          
+
+      - name: Build
+        run: yarn run build
+
+      - name: Unit test
+        run: yarn run test
+
+      - name: Bump version
+        id: bump_version
         uses: hennejg/github-tag-action@v4.3.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          dry_run: true
+
+      - name: Patch version
+        run: "yarn version --new-version ${{ steps.bump_version.outputs.new_version }} --message 'chore: bump version'"
+
+      - name: Push version
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.PAT }}
+
+      - name: Create a GitHub release
+        uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ steps.bump_version.outputs.new_tag }}
+          name: Release ${{ steps.bump_version.outputs.new_tag }}
+          body: ${{ steps.bump_version.outputs.changelog }}
+
+      - name: Release
+        uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}

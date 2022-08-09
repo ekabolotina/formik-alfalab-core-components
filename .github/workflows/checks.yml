@@ -1,13 +1,19 @@
 name: Checks
 on: [pull_request]
 jobs:
-  lint:
+  check:
     runs-on: ubuntu-latest
     steps:
       - name: Set up the environment
         uses: mskelton/setup-yarn@v1
         with:
-          node-version: 14.15.0
+          node-version: ${{ secrets.NODE_VERSION }}
 
       - name: Lint code
         run: yarn run lint
+
+      - name: Build
+        run: yarn run build
+
+      - name: Unit test
+        run: yarn run test
