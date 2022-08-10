@@ -2,8 +2,8 @@
     "name": "formik-alfalab-core-components",
     "version": "0.0.3",
     "description": "Bindings for Formik and Alfalab's Core Components",
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
+    "main": "index.js",
+    "types": "index.d.ts",
     "repository": "https://github.com/ekabolotina/formik-alfalab-core-components.git",
     "bugs": "https://github.com/ekabolotina/formik-alfalab-core-components/issues",
     "author": "Ivan <ivan.rusia@mail.ru>",
@@ -18,7 +18,7 @@
         "test": "jest",
         "build": "rm -rf ./dist && tsc -p tsconfig.build.json && NODE_ENV=production babel src --out-dir dist --extensions \".ts,.tsx\"",
         "prepare": "is-ci || husky install",
-        "prepublishOnly": "yarn run build"
+        "prepublishOnly": "yarn run build && cp package.json LICENSE README.md dist/"
     },
     "devDependencies": {
         "@alfalab/core-components": "^29.1.0",
@@ -63,9 +63,6 @@
         "formik": "^2.0.0",
         "react": ">=16.8.0"
     },
-    "files": [
-        "dist"
-    ],
     "keywords": [
         "formik",
         "react"

@@ -48,7 +48,11 @@ jobs:
           name: Release ${{ steps.bump_version.outputs.new_tag }}
           body: ${{ steps.bump_version.outputs.changelog }}
 
+      - name: Copy actual package.json to dist
+        run: cp package.json dist/
+
       - name: Release
         uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
+          package: ./dist/package.json
