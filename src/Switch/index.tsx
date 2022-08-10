@@ -5,7 +5,7 @@ import {
     Switch as CoreComponentsSwitch,
     SwitchProps as CoreComponentsSwitchProps,
 } from '@alfalab/core-components/switch';
-import { useFieldBlurState } from '../../hooks/useFieldBlurState';
+import { useFieldBlurState } from '../hooks/useFieldBlurState';
 
 export type SwitchProps = SetRequired<CoreComponentsSwitchProps, 'name'>;
 

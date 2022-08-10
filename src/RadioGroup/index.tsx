@@ -5,16 +5,11 @@ import {
     RadioGroup as CoreComponentsRadioGroup,
     RadioGroupProps as CoreComponentsRadioGroupProps,
 } from '@alfalab/core-components/radio-group';
-import { useFieldOkState } from '../../hooks/useFieldOkState';
-import { useFieldBlurState } from '../../hooks/useFieldBlurState';
+import { useFieldOkState } from '../hooks/useFieldOkState';
+import { useFieldBlurState } from '../hooks/useFieldBlurState';
 
 export type RadioGroupProps = SetRequired<CoreComponentsRadioGroupProps, 'name'>;
 
-/**
- * The `touched` state is not managed for now.
- *
- * @see https://github.com/core-ds/core-components/issues/186
- * */
 export const RadioGroup: FC<RadioGroupProps> = (props) => {
     const { name, children, onChange, ...restProps } = props;
     const [field, , form] = useField(name);

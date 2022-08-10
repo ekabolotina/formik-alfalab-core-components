@@ -3,5 +3,5 @@
     "exclude": ["**/*.test.ts", "**/*.test.tsx", "./jest-setup.ts"],
     "compilerOptions": {
         "rootDir": "src"
-    },
+    }
 }

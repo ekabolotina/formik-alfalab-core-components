@@ -5,8 +5,8 @@ import {
     AmountInput as CoreComponentsAmountInput,
     AmountInputProps as CoreComponentsAmountInputProps,
 } from '@alfalab/core-components/amount-input';
-import { useFieldOkState } from '../../hooks/useFieldOkState';
-import { useFieldBlurState } from '../../hooks/useFieldBlurState';
+import { useFieldOkState } from '../hooks/useFieldOkState';
+import { useFieldBlurState } from '../hooks/useFieldBlurState';
 
 export type AmountInputProps = SetRequired<CoreComponentsAmountInputProps, 'name'>;
 

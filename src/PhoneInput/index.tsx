@@ -4,7 +4,7 @@ import {
     PhoneInput as CoreComponentsPhoneInput,
     PhoneInputProps as CoreComponentsPhoneInputProps,
 } from '@alfalab/core-components/phone-input';
-import { useInputFieldState } from '../../hooks/useInputFieldState';
+import { useInputFieldState } from '../hooks/useInputFieldState';
 
 export type PhoneInputProps = SetRequired<CoreComponentsPhoneInputProps, 'name'>;
 
