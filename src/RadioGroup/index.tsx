@@ -10,11 +10,6 @@ import { useFieldBlurState } from '../hooks/useFieldBlurState';
 
 export type RadioGroupProps = SetRequired<CoreComponentsRadioGroupProps, 'name'>;
 
-/**
- * The `touched` state is not managed for now.
- *
- * @see https://github.com/core-ds/core-components/issues/186
- * */
 export const RadioGroup: FC<RadioGroupProps> = (props) => {
     const { name, children, onChange, ...restProps } = props;
     const [field, , form] = useField(name);
