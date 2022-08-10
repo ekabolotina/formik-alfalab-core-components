@@ -1,5 +1,10 @@
 {
-    "extends": ["plugin:@typescript-eslint/recommended", "plugin:react/recommended", "airbnb-typescript", "prettier"],
+    "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/recommended",
+        "airbnb-typescript",
+        "prettier"
+    ],
     "ignorePatterns": ["*.config.js"],
     "env": {
         "browser": true,
