@@ -5,8 +5,8 @@ import {
     RadioGroup as CoreComponentsRadioGroup,
     RadioGroupProps as CoreComponentsRadioGroupProps,
 } from '@alfalab/core-components/radio-group';
-import { useFieldOkState } from '../../hooks/useFieldOkState';
-import { useFieldBlurState } from '../../hooks/useFieldBlurState';
+import { useFieldOkState } from '../hooks/useFieldOkState';
+import { useFieldBlurState } from '../hooks/useFieldBlurState';
 
 export type RadioGroupProps = SetRequired<CoreComponentsRadioGroupProps, 'name'>;
 

@@ -4,7 +4,7 @@ import {
     MaskedInputProps as CoreComponentsMaskedInpuProps,
 } from '@alfalab/core-components/masked-input';
 import { SetRequired } from 'type-fest';
-import { useInputFieldState } from '../../hooks/useInputFieldState';
+import { useInputFieldState } from '../hooks/useInputFieldState';
 
 export type MaskedInputProps = SetRequired<CoreComponentsMaskedInpuProps, 'name'>;
 

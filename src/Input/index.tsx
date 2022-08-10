@@ -4,7 +4,7 @@ import {
     Input as CoreComponentsInput,
     InputProps as CoreComponentsInputProps,
 } from '@alfalab/core-components/input';
-import { useInputFieldState } from '../../hooks/useInputFieldState';
+import { useInputFieldState } from '../hooks/useInputFieldState';
 
 export type InputProps = SetRequired<CoreComponentsInputProps, 'name'>;
 

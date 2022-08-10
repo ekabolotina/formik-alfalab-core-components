@@ -6,7 +6,7 @@ import {
     Select as CoreComponentsSelect,
     SelectProps as CoreComponentsSelectProps,
 } from '@alfalab/core-components/select';
-import { useFieldOkState } from '../../hooks/useFieldOkState';
+import { useFieldOkState } from '../hooks/useFieldOkState';
 
 export type SelectProps = SetRequired<CoreComponentsSelectProps, 'name'>;
 
