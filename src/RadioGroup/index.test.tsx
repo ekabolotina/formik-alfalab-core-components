@@ -2,6 +2,7 @@ import React, { createRef } from 'react';
 import userEvent from '@testing-library/user-event';
 import { RadioGroup as CoreComponentsRadioGroup } from '@alfalab/core-components/radio-group';
 import { Radio } from '@alfalab/core-components/radio';
+import { Tag } from '@alfalab/core-components/tag';
 import { FormikProps } from 'formik';
 import { renderWithFormik, render, screen } from 'test-utils';
 import { RadioGroup } from '.';
@@ -63,13 +64,34 @@ it('should update value inside formik context', async () => {
     expect(formikRef.current?.values.field).toBe('two');
 });
 
-it('should update `touched` state inside formik context', async () => {
+it('should update `touched` state inside formik context with `Radio`', async () => {
     const formikRef = createRef<FormikProps<Values>>();
 
     renderWithFormik<Values>(
         <RadioGroup name="field">
             <Radio label="One" value="one" data-testid="input-one" />
             <Radio label="Two" value="two" data-testid="input-two" />
+        </RadioGroup>,
+        { initialValues: { field: '' }, innerRef: formikRef },
+    );
+
+    await userEvent.click(screen.getByTestId('input-two'));
+    await userEvent.click(document.body);
+
+    expect(formikRef.current?.touched.field).toBe(true);
+});
+
+it('should update `touched` state inside formik context with `Tag`', async () => {
+    const formikRef = createRef<FormikProps<Values>>();
+
+    renderWithFormik<Values>(
+        <RadioGroup name="field">
+            <Tag value="one" data-testid="input-one">
+                One
+            </Tag>
+            <Tag value="two" data-testid="input-two">
+                Two
+            </Tag>
         </RadioGroup>,
         { initialValues: { field: '' }, innerRef: formikRef },
     );
