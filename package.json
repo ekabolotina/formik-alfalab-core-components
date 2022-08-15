@@ -1,6 +1,6 @@
 {
     "name": "formik-alfalab-core-components",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "Bindings for Formik and Alfalab's Core Components",
     "main": "index.js",
     "types": "index.d.ts",
