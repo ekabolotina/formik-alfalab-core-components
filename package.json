@@ -78,6 +78,7 @@
         "RadioGroup/",
         "Select/",
         "Switch/",
+        "InputAutocomplete/",
         "hooks/"
     ]
 }
