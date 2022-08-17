@@ -4,13 +4,13 @@ import { InputProps } from '@alfalab/core-components/input';
 import { useFieldBlurState } from './useFieldBlurState';
 import { useFieldOkState } from './useFieldOkState';
 
-export function useInputFieldState<T extends SetRequired<InputProps, 'name'>>(inputProps: T) {
-    const { name, onChange } = inputProps;
+export function useInputFieldState<P extends SetRequired<InputProps, 'name'>>(props: P): P {
+    const { name, onChange } = props;
     const [field, , form] = useField(name);
-    const okState = useFieldOkState(inputProps);
-    const blurState = useFieldBlurState(inputProps);
+    const okState = useFieldOkState(props);
+    const blurState = useFieldBlurState(props);
 
-    const handleChange: T['onChange'] = (event, payload) => {
+    const handleChange: P['onChange'] = (event, payload) => {
         form.setValue(payload.value);
 
         if (onChange) {
@@ -19,7 +19,7 @@ export function useInputFieldState<T extends SetRequired<InputProps, 'name'>>(in
     };
 
     return {
-        ...inputProps,
+        ...props,
         ...field,
         ...blurState,
         ...okState,
