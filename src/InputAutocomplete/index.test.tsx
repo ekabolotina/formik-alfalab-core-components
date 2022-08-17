@@ -54,6 +54,40 @@ it('should update value inside formik context', async () => {
     expect(formikRef.current?.values.field).toBe('two');
 });
 
+it('should allow to type custom text', async () => {
+    renderWithFormik<Values>(<InputAutocomplete name="field" options={OPTIONS} />, {
+        initialValues: { field: 'Initial text' },
+    });
+
+    await userEvent.clear(screen.getByRole('textbox'));
+    await userEvent.type(screen.getByRole('textbox'), 'New text');
+
+    expect(screen.getByRole('textbox')).toHaveValue('New text');
+});
+
+it('should reset typed text if option was not selected', async () => {
+    renderWithFormik<Values>(<InputAutocomplete name="field" options={OPTIONS} />, {
+        initialValues: { field: 'Initial text' },
+    });
+
+    await userEvent.clear(screen.getByRole('textbox'));
+    await userEvent.type(screen.getByRole('textbox'), 'New text');
+    await userEvent.click(document.body);
+
+    expect(screen.getByRole('textbox')).toHaveValue('Initial text');
+});
+
+it('should render text from selected option', async () => {
+    renderWithFormik<Values>(<InputAutocomplete name="field" options={OPTIONS} />, {
+        initialValues: { field: '' },
+    });
+
+    await userEvent.type(screen.getByRole('textbox'), 'New text');
+    await userEvent.click(screen.getByText('Two'));
+
+    expect(screen.getByRole('textbox')).toHaveValue('two');
+});
+
 it('should update `touched` state inside formik context', async () => {
     const formikRef = createRef<FormikProps<Values>>();
 
