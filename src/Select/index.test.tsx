@@ -80,6 +80,27 @@ it('should not render error from formik context if not touched', () => {
     expect(screen.queryByText('Error text')).not.toBeInTheDocument();
 });
 
+it('should not render error from formik context if `error={false}` provided', () => {
+    renderWithFormik<Values>(<Select name="field" options={OPTIONS} error={false} />, {
+        initialValues: { field: '' },
+        initialErrors: { field: 'Error text' },
+        initialTouched: { field: true },
+    });
+
+    expect(screen.queryByText('Error text')).not.toBeInTheDocument();
+});
+
+it('should render provided error instead of the one from formik context', () => {
+    renderWithFormik<Values>(<Select name="field" options={OPTIONS} error="Custom error" />, {
+        initialValues: { field: '' },
+        initialErrors: { field: 'Error text' },
+        initialTouched: { field: true },
+    });
+
+    expect(screen.queryByText('Error text')).not.toBeInTheDocument();
+    expect(screen.queryByText('Custom error')).toBeInTheDocument();
+});
+
 it('should render error from formik context if touched', () => {
     renderWithFormik<Values>(<Select name="field" options={OPTIONS} />, {
         initialValues: { field: '' },

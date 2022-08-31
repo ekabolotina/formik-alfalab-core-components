@@ -114,6 +114,39 @@ it('should not render error from formik context if not touched', () => {
     expect(screen.queryByText('Error text')).not.toBeInTheDocument();
 });
 
+it('should not render error from formik context if `error={false}` provided', () => {
+    renderWithFormik<Values>(
+        <RadioGroup name="field" error={false}>
+            <Radio label="One" value="one" data-testid="input-one" />
+            <Radio label="Two" value="two" data-testid="input-two" />
+        </RadioGroup>,
+        {
+            initialValues: { field: '' },
+            initialErrors: { field: 'Error text' },
+            initialTouched: { field: true },
+        },
+    );
+
+    expect(screen.queryByText('Error text')).not.toBeInTheDocument();
+});
+
+it('should render provided error instead of the one from formik context', () => {
+    renderWithFormik<Values>(
+        <RadioGroup name="field" error="Custom error">
+            <Radio label="One" value="one" data-testid="input-one" />
+            <Radio label="Two" value="two" data-testid="input-two" />
+        </RadioGroup>,
+        {
+            initialValues: { field: '' },
+            initialErrors: { field: 'Error text' },
+            initialTouched: { field: true },
+        },
+    );
+
+    expect(screen.queryByText('Error text')).not.toBeInTheDocument();
+    expect(screen.queryByText('Custom error')).toBeInTheDocument();
+});
+
 it('should render error from formik context if touched', () => {
     renderWithFormik<Values>(
         <RadioGroup name="field">
