@@ -79,6 +79,7 @@
         "Select/",
         "Switch/",
         "InputAutocomplete/",
+        "Textarea/",
         "hooks/"
     ]
 }
