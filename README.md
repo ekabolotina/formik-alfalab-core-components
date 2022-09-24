@@ -14,6 +14,7 @@ from `@alfalab/core-components`, but with one required prop `name`. Available co
 * RadioGroup
 * Select
 * Switch
+* Textarea
 
 Consider the example:
 ```tsx
