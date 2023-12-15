@@ -101,3 +101,15 @@ it('should render error from formik context if touched', () => {
 
     expect(screen.queryByText('Error text')).toBeInTheDocument();
 });
+
+it('should ignore entered value which is greater than `max` prop', async () => {
+    const formikRef = createRef<FormikProps<Values>>();
+
+    renderWithFormik<Values>(<AmountInput name="field" max={1000} data-testid="input" />, {
+        initialValues: { field: '' },
+        innerRef: formikRef,
+    });
+    await userEvent.type(screen.getByTestId('input'), '99', { delay: 100 });
+
+    expect(formikRef.current?.values.field).toBe(900);
+});
