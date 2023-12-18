@@ -17,13 +17,7 @@ export const AmountInput: FC<AmountInputProps> = (props) => {
     const blurState = useFieldBlurState(props);
 
     const handleChange: AmountInputProps['onChange'] = (event, payload) => {
-        const { value } = payload;
-
-        if (value !== null && value > Number(restProps.max)) {
-            return;
-        }
-
-        form.setValue(value);
+        form.setValue(payload.value);
 
         if (onChange) {
             onChange(event, payload);
