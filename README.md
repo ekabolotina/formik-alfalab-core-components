@@ -39,12 +39,11 @@ export const MyForm: FC = () => {
 
 ### Exports
 
-Each component can be imported either from the root (1) or from the subdirectory (2):
+Each component can be imported from the subdirectory:
 ```tsx
-import { Input } from 'formik-alfalab-core-components'; // (1)
-import { Input } from 'formik-alfalab-core-components/Input'; // (2)
+import { Input } from 'formik-alfalab-core-components/Input';
 ```
-This library is also exposes some utility hooks which are used under the hood by components:
+This library also exposes some utility hooks which are used under the hood by components:
 * `useFieldBlurState` — useful for handling `blur` event inside formik context;
 * `useFieldOkState` — provides `error` and `success` props using formik state; 
 * `useInputFieldState` — provides `props: InputProps` using formik state;

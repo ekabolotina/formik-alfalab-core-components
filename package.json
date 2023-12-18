@@ -69,8 +69,6 @@
         "react"
     ],
     "files": [
-        "index.d.ts",
-        "index.js",
         "AmountInput/",
         "Input/",
         "MaskedInput/",
