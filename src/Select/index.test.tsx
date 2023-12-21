@@ -2,7 +2,7 @@ import React, { createRef } from 'react';
 import userEvent from '@testing-library/user-event';
 import { Select as CoreComponentsSelect } from '@alfalab/core-components/select';
 import { FormikProps } from 'formik';
-import { renderWithFormik, render, screen } from 'test-utils';
+import { renderWithFormik, render, screen, createMatchMediaMock } from 'test-utils';
 import { Select } from '.';
 
 type Values = {
@@ -13,6 +13,16 @@ const OPTIONS = [
     { key: 'one', value: 'one', content: 'One' },
     { key: 'two', value: 'two', content: 'Two' },
 ];
+
+const matchMediaMock = createMatchMediaMock();
+
+beforeAll(() => {
+    matchMediaMock.desktop();
+});
+
+afterAll(() => {
+    matchMediaMock.destroy();
+});
 
 it('should render original component', () => {
     render(

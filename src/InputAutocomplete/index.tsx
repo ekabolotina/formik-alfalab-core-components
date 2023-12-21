@@ -3,10 +3,14 @@ import {
     InputAutocomplete as CoreComponentsInputAutocomplete,
     InputAutocompleteProps as CoreComponentsInputAutocompleteProps,
 } from '@alfalab/core-components/input-autocomplete';
-import { SetRequired } from 'type-fest';
 import { useSelectFieldState } from '../hooks/useSelectFieldState';
+import { SetRequired } from '../types/SetRequired';
 
-export type InputAutocompleteProps = SetRequired<CoreComponentsInputAutocompleteProps, 'name'>;
+export type InputAutocompleteProps = SetRequired<
+    Omit<CoreComponentsInputAutocompleteProps, 'onChange'> &
+        Partial<Pick<CoreComponentsInputAutocompleteProps, 'onChange'>>,
+    'name'
+>;
 
 export const InputAutocomplete: FC<InputAutocompleteProps> = (props) => {
     const { selected, value, onChange, onFocus, onInput, onBlur, ...fieldState } =

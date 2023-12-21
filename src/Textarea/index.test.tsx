@@ -2,12 +2,22 @@ import React, { createRef } from 'react';
 import userEvent from '@testing-library/user-event';
 import { Textarea as CoreComponentsTextarea } from '@alfalab/core-components/textarea';
 import { FormikProps } from 'formik';
-import { renderWithFormik, render, screen } from 'test-utils';
+import { renderWithFormik, render, screen, createMatchMediaMock } from 'test-utils';
 import { Textarea } from '.';
 
 type Values = {
     field: string;
 };
+
+const matchMediaMock = createMatchMediaMock();
+
+beforeAll(() => {
+    matchMediaMock.desktop();
+});
+
+afterAll(() => {
+    matchMediaMock.destroy();
+});
 
 it('should render original component', () => {
     render(

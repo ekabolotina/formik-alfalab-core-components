@@ -1,10 +1,10 @@
 import React, { FC } from 'react';
-import { SetRequired } from 'type-fest';
 import {
     PhoneInput as CoreComponentsPhoneInput,
     PhoneInputProps as CoreComponentsPhoneInputProps,
 } from '@alfalab/core-components/phone-input';
 import { useInputFieldState } from '../hooks/useInputFieldState';
+import { SetRequired } from '../types/SetRequired';
 
 export type PhoneInputProps = SetRequired<CoreComponentsPhoneInputProps, 'name'>;
 

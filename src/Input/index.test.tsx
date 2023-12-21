@@ -2,12 +2,22 @@ import React, { createRef } from 'react';
 import userEvent from '@testing-library/user-event';
 import { Input as CoreComponentsInput } from '@alfalab/core-components/input';
 import { FormikProps } from 'formik';
-import { renderWithFormik, render, screen } from 'test-utils';
+import { renderWithFormik, render, screen, createMatchMediaMock } from 'test-utils';
 import { Input } from '.';
 
 type Values = {
     field: string;
 };
+
+const matchMediaMock = createMatchMediaMock();
+
+beforeAll(() => {
+    matchMediaMock.desktop();
+});
+
+afterAll(() => {
+    matchMediaMock.destroy();
+});
 
 it('should render original component', () => {
     render(

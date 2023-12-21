@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import { SetRequired } from 'type-fest';
 import { useField } from 'formik';
 import {
     AmountInput as CoreComponentsAmountInput,
@@ -7,6 +6,7 @@ import {
 } from '@alfalab/core-components/amount-input';
 import { useFieldOkState } from '../hooks/useFieldOkState';
 import { useFieldBlurState } from '../hooks/useFieldBlurState';
+import { SetRequired } from '../types/SetRequired';
 
 export type AmountInputProps = SetRequired<CoreComponentsAmountInputProps, 'name'>;
 

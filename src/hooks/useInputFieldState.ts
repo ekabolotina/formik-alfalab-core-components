@@ -1,8 +1,8 @@
 import { useField } from 'formik';
-import { SetRequired } from 'type-fest';
 import { InputProps } from '@alfalab/core-components/input';
 import { useFieldBlurState } from './useFieldBlurState';
 import { useFieldOkState } from './useFieldOkState';
+import { SetRequired } from '../types/SetRequired';
 
 export function useInputFieldState<P extends SetRequired<InputProps, 'name'>>(props: P): P {
     const { name, onChange } = props;

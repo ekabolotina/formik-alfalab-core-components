@@ -1,11 +1,11 @@
 import React, { FC } from 'react';
-import { SetRequired } from 'type-fest';
 import { useField } from 'formik';
 import {
     Switch as CoreComponentsSwitch,
     SwitchProps as CoreComponentsSwitchProps,
 } from '@alfalab/core-components/switch';
 import { useFieldBlurState } from '../hooks/useFieldBlurState';
+import { SetRequired } from '../types/SetRequired';
 
 export type SwitchProps = SetRequired<CoreComponentsSwitchProps, 'name'>;
 

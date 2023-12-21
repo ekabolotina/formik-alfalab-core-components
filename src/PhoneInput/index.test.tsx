@@ -2,12 +2,22 @@ import React, { createRef } from 'react';
 import userEvent from '@testing-library/user-event';
 import { PhoneInput as CoreComponentsPhoneInput } from '@alfalab/core-components/phone-input';
 import { FormikProps } from 'formik';
-import { renderWithFormik, render, screen } from 'test-utils';
+import { renderWithFormik, render, screen, createMatchMediaMock } from 'test-utils';
 import { PhoneInput } from '.';
 
 type Values = {
     field: string;
 };
+
+const matchMediaMock = createMatchMediaMock();
+
+beforeAll(() => {
+    matchMediaMock.desktop();
+});
+
+afterAll(() => {
+    matchMediaMock.destroy();
+});
 
 it('should render original component', () => {
     render(
@@ -33,7 +43,7 @@ it('should render value from formik context', () => {
         initialValues: { field: '79876543210' },
     });
 
-    expect(screen.getByTestId('input')).toHaveValue('+7 987 654-32-10');
+    expect(screen.getByTestId('input')).toHaveValue('+7 987 654 32 10');
 });
 
 it('should update value inside formik context', async () => {
@@ -45,7 +55,7 @@ it('should update value inside formik context', async () => {
     });
     await userEvent.type(screen.getByTestId('input'), '79876543210', { delay: 20 });
 
-    expect(formikRef.current?.values.field).toBe('+7 987 654-32-10');
+    expect(formikRef.current?.values.field).toBe('+7 987 654 32 10');
 });
 
 it('should update `touched` state inside formik context', async () => {
