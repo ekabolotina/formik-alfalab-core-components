@@ -1,7 +1,7 @@
-import { BaseSelectProps, OptionShape } from '@alfalab/core-components/select';
+import { BaseSelectProps, OptionShape } from '@alfalab/core-components/select/typings';
 import { useField } from 'formik';
-import { SetRequired } from 'type-fest';
 import { useFieldOkState } from './useFieldOkState';
+import { SetRequired } from '../types/SetRequired';
 
 export function useSelectFieldState<P extends SetRequired<BaseSelectProps, 'name'>>(props: P): P {
     const { name, onChange, onBlur, options } = props;

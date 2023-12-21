@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import { SetRequired } from 'type-fest';
 import {
     Textarea as CoreComponentsTextarea,
     TextareaProps as CoreComponentsTextareaProps,
@@ -7,6 +6,7 @@ import {
 import { useField } from 'formik';
 import { useFieldBlurState } from '../hooks/useFieldBlurState';
 import { useFieldOkState } from '../hooks/useFieldOkState';
+import { SetRequired } from '../types/SetRequired';
 
 export type TextareaProps = SetRequired<CoreComponentsTextareaProps, 'name'>;
 

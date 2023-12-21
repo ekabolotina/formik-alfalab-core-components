@@ -4,12 +4,22 @@ import { RadioGroup as CoreComponentsRadioGroup } from '@alfalab/core-components
 import { Radio } from '@alfalab/core-components/radio';
 import { Tag } from '@alfalab/core-components/tag';
 import { FormikProps } from 'formik';
-import { renderWithFormik, render, screen } from 'test-utils';
+import { renderWithFormik, render, screen, createMatchMediaMock } from 'test-utils';
 import { RadioGroup } from '.';
 
 type Values = {
     field: string;
 };
+
+const matchMediaMock = createMatchMediaMock();
+
+beforeAll(() => {
+    matchMediaMock.desktop();
+});
+
+afterAll(() => {
+    matchMediaMock.destroy();
+});
 
 it('should render original component', () => {
     render(

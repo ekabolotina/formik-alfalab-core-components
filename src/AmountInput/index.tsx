@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import { SetRequired } from 'type-fest';
 import { useField } from 'formik';
 import {
     AmountInput as CoreComponentsAmountInput,
@@ -7,6 +6,7 @@ import {
 } from '@alfalab/core-components/amount-input';
 import { useFieldOkState } from '../hooks/useFieldOkState';
 import { useFieldBlurState } from '../hooks/useFieldBlurState';
+import { SetRequired } from '../types/SetRequired';
 
 export type AmountInputProps = SetRequired<CoreComponentsAmountInputProps, 'name'>;
 
@@ -17,13 +17,7 @@ export const AmountInput: FC<AmountInputProps> = (props) => {
     const blurState = useFieldBlurState(props);
 
     const handleChange: AmountInputProps['onChange'] = (event, payload) => {
-        const { value } = payload;
-
-        if (value !== null && value > Number(restProps.max)) {
-            return;
-        }
-
-        form.setValue(value);
+        form.setValue(payload.value);
 
         if (onChange) {
             onChange(event, payload);

@@ -2,12 +2,22 @@ import { AmountInput as CoreComponentsAmountInput } from '@alfalab/core-componen
 import userEvent from '@testing-library/user-event';
 import React, { createRef } from 'react';
 import { FormikProps } from 'formik';
-import { renderWithFormik, render, screen } from 'test-utils';
+import { renderWithFormik, render, screen, createMatchMediaMock } from 'test-utils';
 import { AmountInput } from '.';
 
 type Values = {
     field: string;
 };
+
+const matchMediaMock = createMatchMediaMock();
+
+beforeAll(() => {
+    matchMediaMock.desktop();
+});
+
+afterAll(() => {
+    matchMediaMock.destroy();
+});
 
 it('should render original component', () => {
     render(
@@ -100,16 +110,4 @@ it('should render error from formik context if touched', () => {
     });
 
     expect(screen.queryByText('Error text')).toBeInTheDocument();
-});
-
-it('should ignore entered value which is greater than `max` prop', async () => {
-    const formikRef = createRef<FormikProps<Values>>();
-
-    renderWithFormik<Values>(<AmountInput name="field" max={1000} data-testid="input" />, {
-        initialValues: { field: '' },
-        innerRef: formikRef,
-    });
-    await userEvent.type(screen.getByTestId('input'), '99', { delay: 100 });
-
-    expect(formikRef.current?.values.field).toBe(900);
 });

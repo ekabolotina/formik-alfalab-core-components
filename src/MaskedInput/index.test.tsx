@@ -2,7 +2,7 @@ import React, { createRef } from 'react';
 import userEvent from '@testing-library/user-event';
 import { MaskedInput as CoreComponentsMaskedInput } from '@alfalab/core-components/masked-input';
 import { FormikProps } from 'formik';
-import { renderWithFormik, render, screen } from 'test-utils';
+import { renderWithFormik, render, screen, createMatchMediaMock } from 'test-utils';
 import { MaskedInput, MaskedInputProps } from '.';
 
 type Values = {
@@ -10,6 +10,16 @@ type Values = {
 };
 
 const MASK: MaskedInputProps['mask'] = [/\d/, /\d/, '-', /\d/, /\d/];
+
+const matchMediaMock = createMatchMediaMock();
+
+beforeAll(() => {
+    matchMediaMock.desktop();
+});
+
+afterAll(() => {
+    matchMediaMock.destroy();
+});
 
 it('should render original component', () => {
     render(
