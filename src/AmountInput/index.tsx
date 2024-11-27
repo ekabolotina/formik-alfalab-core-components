@@ -1,11 +1,12 @@
-import React, { FC, ComponentProps } from 'react';
+import React, { FC } from 'react';
 import { useField } from 'formik';
-import { AmountInput as CoreComponentsAmountInput } from '@alfalab/core-components/amount-input';
+import {
+    AmountInput as CoreComponentsAmountInput,
+    AmountInputProps as CoreComponentsAmountInputProps,
+} from '@alfalab/core-components/amount-input';
 import { useFieldOkState } from '../hooks/useFieldOkState';
 import { useFieldBlurState } from '../hooks/useFieldBlurState';
 import { SetRequired } from '../types/SetRequired';
-
-type CoreComponentsAmountInputProps = ComponentProps<typeof CoreComponentsAmountInput>;
 
 export type AmountInputProps = SetRequired<CoreComponentsAmountInputProps, 'name'>;
 

@@ -25,11 +25,11 @@ export const InputAutocomplete: FC<InputAutocompleteProps> = (props) => {
         }
     };
 
-    const handleInput: CoreComponentsInputAutocompleteProps['onInput'] = (event, payload) => {
-        setInputValue(payload.value);
+    const handleInput: CoreComponentsInputAutocompleteProps['onInput'] = (newValue, reason) => {
+        setInputValue(newValue);
 
         if (onInput) {
-            onInput(event, payload);
+            onInput(newValue, reason);
         }
     };
 
