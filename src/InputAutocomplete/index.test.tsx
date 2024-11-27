@@ -18,8 +18,6 @@ const matchMediaMock = createMatchMediaMock();
 
 const handleChange = jest.fn();
 
-const handleFilter = jest.fn();
-
 beforeAll(() => {
     matchMediaMock.desktop();
 });
@@ -36,13 +34,12 @@ it('should render original component', () => {
                 options={OPTIONS}
                 id="id"
                 onChange={handleChange}
-                onFilter={handleFilter}
             />
         </div>,
     );
     renderWithFormik<Values>(
         <div data-testid="bindingComponent">
-            <InputAutocomplete name="field" options={OPTIONS} id="id" onFilter={handleFilter} />
+            <InputAutocomplete name="field" options={OPTIONS} id="id" />
         </div>,
         { initialValues: { field: '' } },
     );
@@ -54,12 +51,9 @@ it('should render original component', () => {
 });
 
 it('should render value from formik context', () => {
-    renderWithFormik<Values>(
-        <InputAutocomplete name="field" options={OPTIONS} onFilter={handleFilter} />,
-        {
-            initialValues: { field: 'two' },
-        },
-    );
+    renderWithFormik<Values>(<InputAutocomplete name="field" options={OPTIONS} />, {
+        initialValues: { field: 'two' },
+    });
 
     expect(screen.getByDisplayValue('two')).toBeInTheDocument();
 });
@@ -67,13 +61,10 @@ it('should render value from formik context', () => {
 it('should update value inside formik context', async () => {
     const formikRef = createRef<FormikProps<Values>>();
 
-    renderWithFormik<Values>(
-        <InputAutocomplete name="field" options={OPTIONS} onFilter={handleFilter} />,
-        {
-            initialValues: { field: '' },
-            innerRef: formikRef,
-        },
-    );
+    renderWithFormik<Values>(<InputAutocomplete name="field" options={OPTIONS} />, {
+        initialValues: { field: '' },
+        innerRef: formikRef,
+    });
     await userEvent.click(screen.getByRole('textbox'));
     await userEvent.click(screen.getByText('Two'));
 
@@ -81,12 +72,9 @@ it('should update value inside formik context', async () => {
 });
 
 it('should allow to type custom text', async () => {
-    renderWithFormik<Values>(
-        <InputAutocomplete name="field" options={OPTIONS} onFilter={handleFilter} />,
-        {
-            initialValues: { field: 'Initial text' },
-        },
-    );
+    renderWithFormik<Values>(<InputAutocomplete name="field" options={OPTIONS} />, {
+        initialValues: { field: 'Initial text' },
+    });
 
     await userEvent.clear(screen.getByRole('textbox'));
     await userEvent.type(screen.getByRole('textbox'), 'New text');
@@ -95,12 +83,9 @@ it('should allow to type custom text', async () => {
 });
 
 it('should reset typed text if option was not selected', async () => {
-    renderWithFormik<Values>(
-        <InputAutocomplete name="field" options={OPTIONS} onFilter={handleFilter} />,
-        {
-            initialValues: { field: 'Initial text' },
-        },
-    );
+    renderWithFormik<Values>(<InputAutocomplete name="field" options={OPTIONS} />, {
+        initialValues: { field: 'Initial text' },
+    });
 
     await userEvent.clear(screen.getByRole('textbox'));
     await userEvent.type(screen.getByRole('textbox'), 'New text');
@@ -110,12 +95,9 @@ it('should reset typed text if option was not selected', async () => {
 });
 
 it('should render text from selected option', async () => {
-    renderWithFormik<Values>(
-        <InputAutocomplete name="field" options={OPTIONS} onFilter={handleFilter} />,
-        {
-            initialValues: { field: '' },
-        },
-    );
+    renderWithFormik<Values>(<InputAutocomplete name="field" options={OPTIONS} />, {
+        initialValues: { field: '' },
+    });
 
     await userEvent.type(screen.getByRole('textbox'), 'New text');
     await userEvent.click(screen.getByText('Two'));
@@ -126,13 +108,10 @@ it('should render text from selected option', async () => {
 it('should update `touched` state inside formik context', async () => {
     const formikRef = createRef<FormikProps<Values>>();
 
-    renderWithFormik<Values>(
-        <InputAutocomplete name="field" options={OPTIONS} onFilter={handleFilter} />,
-        {
-            initialValues: { field: '' },
-            innerRef: formikRef,
-        },
-    );
+    renderWithFormik<Values>(<InputAutocomplete name="field" options={OPTIONS} />, {
+        initialValues: { field: '' },
+        innerRef: formikRef,
+    });
     await userEvent.click(screen.getByRole('textbox'));
     await userEvent.click(document.body);
 
@@ -140,38 +119,27 @@ it('should update `touched` state inside formik context', async () => {
 });
 
 it('should not render error from formik context if not touched', () => {
-    renderWithFormik<Values>(
-        <InputAutocomplete name="field" options={OPTIONS} onFilter={handleFilter} />,
-        {
-            initialValues: { field: '' },
-            initialErrors: { field: 'Error text' },
-        },
-    );
+    renderWithFormik<Values>(<InputAutocomplete name="field" options={OPTIONS} />, {
+        initialValues: { field: '' },
+        initialErrors: { field: 'Error text' },
+    });
 
     expect(screen.queryByText('Error text')).not.toBeInTheDocument();
 });
 
 it('should not render error from formik context if `error={false}` provided', () => {
-    renderWithFormik<Values>(
-        <InputAutocomplete name="field" options={OPTIONS} error={false} onFilter={handleFilter} />,
-        {
-            initialValues: { field: '' },
-            initialErrors: { field: 'Error text' },
-            initialTouched: { field: true },
-        },
-    );
+    renderWithFormik<Values>(<InputAutocomplete name="field" options={OPTIONS} error={false} />, {
+        initialValues: { field: '' },
+        initialErrors: { field: 'Error text' },
+        initialTouched: { field: true },
+    });
 
     expect(screen.queryByText('Error text')).not.toBeInTheDocument();
 });
 
 it('should render provided error instead of the one from formik context', () => {
     renderWithFormik<Values>(
-        <InputAutocomplete
-            name="field"
-            options={OPTIONS}
-            error="Custom error"
-            onFilter={handleFilter}
-        />,
+        <InputAutocomplete name="field" options={OPTIONS} error="Custom error" />,
         {
             initialValues: { field: '' },
             initialErrors: { field: 'Error text' },
@@ -184,14 +152,11 @@ it('should render provided error instead of the one from formik context', () => 
 });
 
 it('should render error from formik context if touched', () => {
-    renderWithFormik<Values>(
-        <InputAutocomplete name="field" options={OPTIONS} onFilter={handleFilter} />,
-        {
-            initialValues: { field: '' },
-            initialErrors: { field: 'Error text' },
-            initialTouched: { field: true },
-        },
-    );
+    renderWithFormik<Values>(<InputAutocomplete name="field" options={OPTIONS} />, {
+        initialValues: { field: '' },
+        initialErrors: { field: 'Error text' },
+        initialTouched: { field: true },
+    });
 
     expect(screen.queryByText('Error text')).toBeInTheDocument();
 });
