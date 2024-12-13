@@ -7,17 +7,16 @@
   resolved "https://registry.yarnpkg.com/@adobe/css-tools/-/css-tools-4.0.1.tgz#b38b444ad3aa5fedbb15f2f746dcd934226a12dd"
   integrity sha512-+u76oB43nOHrF4DDWRLWDCtci7f3QJoEBigemIdIeTi1ODqjx6Tad9NCVnPRwewWlKkVab5PlK8DCtPTyX7S8g==
 
-"@alfalab/core-components@^47.26.1":
-  version "47.26.1"
-  resolved "https://registry.yarnpkg.com/@alfalab/core-components/-/core-components-47.26.1.tgz#ea0dccc26bac46578369025325bb0e58a09d1c8e"
-  integrity sha512-Qi3/yjTDl6y5EArqwPnYrj4uSEHTwGdto6CyoTFcPexgUb08JlGeMsKqaJIFQ3nGVfHUYFGFyxMXm7y/0KkP4w==
+"@alfalab/core-components@^48.5.0":
+  version "48.5.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components/-/core-components-48.5.0.tgz#db86b8843e9dbfd9b572bfc29d80c82b547891f9"
+  integrity sha512-BDZYvp9c6cg2OI9p6XcpYkzYuCQD69KQ2o0NjgoXPjSceQhVpiHOD5l+OM8bJEeViWCKUuU6pffVToNjSPWtGg==
   dependencies:
     "@alfalab/data" "^1.8.0"
     "@alfalab/hooks" "^1.13.0"
-    "@alfalab/icons-glyph" "^2.139.0"
+    "@alfalab/icons-glyph" "^2.189.0"
     "@alfalab/icons-logotype" "^2.27.0"
     "@alfalab/react-canvas-pattern-lock" "^2.0.7"
-    "@alfalab/stack-context" "^1.16.0"
     "@alfalab/utils" "^1.15.2"
     "@dnd-kit/core" "^6.0.7"
     "@dnd-kit/sortable" "^7.0.2"
@@ -60,7 +59,12 @@
     swiper "^6.8.2"
     text-mask-core "^5.1.2"
     tslib "^2.4.0"
-    ui-primitives "^20.8.0"
+    ui-primitives "^22.7.0"
+
+"@alfalab/core-config@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-config/-/core-config-1.0.0.tgz#e20d7d2ad36e58b1b65a071eebeed1776ae3cf57"
+  integrity sha512-9msIAhOYlZ7Ydpf490P1694Oc60UmsodJpDeAvhQ84XzWzGc1rRH6+FWXWtzoS1tOlNlybyhR2y7Gq6Ontth3w==
 
 "@alfalab/data@^1.8.0":
   version "1.8.0"
@@ -75,10 +79,10 @@
     "@alfalab/utils" "^1.13.2"
     uuid "^8.3.2"
 
-"@alfalab/icons-glyph@^2.139.0":
-  version "2.208.0"
-  resolved "https://registry.yarnpkg.com/@alfalab/icons-glyph/-/icons-glyph-2.208.0.tgz#9c0aef4edf6debfd3cbb6869b71180d2fa1680d8"
-  integrity sha512-r+NfsJKVkpRMHY0MIintMrYic+lB0BXZIGWpR5/Gio4EpdS6r1nnzsv0mQZQseX5OELhNFCkSS71yQHYboL8dw==
+"@alfalab/icons-glyph@^2.189.0":
+  version "2.210.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/icons-glyph/-/icons-glyph-2.210.0.tgz#55a2821539ad7e7689b5b0b5ee39ed31d44e48b4"
+  integrity sha512-/Jez34xqHxWaVD6qL0tbAkZn3Q4XFBcP9W3ZmSIIjCbEiv6RkP8TmR06AX9wZck4lJNNupsXDdgT5as2+9t+jQ==
 
 "@alfalab/icons-logotype@^2.27.0":
   version "2.33.0"
@@ -6891,10 +6895,10 @@ typescript@^4.6.4, typescript@^4.7.4:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.7.4.tgz#1a88596d1cf47d59507a1bcdfb5b9dfe4d488235"
   integrity sha512-C0WQT0gezHuw6AdY1M2jxUO83Rjf0HP7Sk1DtXj6j1EwkQNZrHAg2XPWlq62oqEhYvONq5pkC2Y9oPljWToLmQ==
 
-ui-primitives@^20.8.0:
-  version "20.44.0"
-  resolved "https://registry.yarnpkg.com/ui-primitives/-/ui-primitives-20.44.0.tgz#dffdce6668455685e98e8ebc06c570cd9ff7eea6"
-  integrity sha512-0mWyVFj3qLhOVYIbNIPikr01lWZauH6wbRPxEngvUDEwV4GUXKN7YiHm0ltQodFUJlGPggw3yY2jiG5qI3f0kA==
+ui-primitives@^22.7.0:
+  version "22.10.0"
+  resolved "https://registry.yarnpkg.com/ui-primitives/-/ui-primitives-22.10.0.tgz#80d35a3cd3d64d152d7b33a447e7658780ea8b66"
+  integrity sha512-fKo5plrYnpNpax23lR0EOGqDXsYN7iPIgT/gDVA8knuXclALiiQ9HzkN9OMQkJxJIaXxrev5u10ZnONf6aKexg==
 
 unbox-primitive@^1.0.2:
   version "1.0.2"
