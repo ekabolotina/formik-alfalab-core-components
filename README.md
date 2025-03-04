@@ -7,6 +7,7 @@ Bindings for [formik](https://formik.org/) and [@alfalab/core-components](https:
 Just use the components from `formik-alfalab-core-components` as a drop-in replacement of the components 
 from `@alfalab/core-components`, but with one required prop `name`. Available components are:
 * AmountInput
+* Checkbox
 * Input
 * InputAutocomplete
 * MaskedInput

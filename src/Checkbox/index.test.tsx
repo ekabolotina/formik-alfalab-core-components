@@ -1,9 +1,9 @@
 import React, { createRef } from 'react';
 import userEvent from '@testing-library/user-event';
-import { Switch as CoreComponentsSwitch } from '@alfalab/core-components/switch';
+import { Checkbox as CoreComponentsCheckbox } from '@alfalab/core-components/checkbox';
 import { FormikProps } from 'formik';
 import { renderWithFormik, render, screen } from 'test-utils';
-import { Switch } from '.';
+import { Checkbox } from '.';
 
 type Values = {
     field: boolean | '';
@@ -12,12 +12,12 @@ type Values = {
 it('should render original component', () => {
     render(
         <div data-testid="originalComponent">
-            <CoreComponentsSwitch name="field" />
+            <CoreComponentsCheckbox name="field" />
         </div>,
     );
     renderWithFormik<Values>(
         <div data-testid="bindingComponent">
-            <Switch name="field" />
+            <Checkbox name="field" />
         </div>,
         { initialValues: { field: '' } },
     );
@@ -29,7 +29,7 @@ it('should render original component', () => {
 });
 
 it('should render value from formik context', () => {
-    renderWithFormik<Values>(<Switch name="field" data-testid="input" />, {
+    renderWithFormik<Values>(<Checkbox name="field" data-testid="input" />, {
         initialValues: { field: true },
     });
 
@@ -39,10 +39,11 @@ it('should render value from formik context', () => {
 it('should update value inside formik context', async () => {
     const formikRef = createRef<FormikProps<Values>>();
 
-    renderWithFormik<Values>(<Switch name="field" data-testid="input" />, {
+    renderWithFormik<Values>(<Checkbox name="field" data-testid="input" />, {
         initialValues: { field: false },
         innerRef: formikRef,
     });
+
     await userEvent.click(screen.getByTestId('input'));
 
     expect(formikRef.current?.values.field).toBe(true);
@@ -51,7 +52,7 @@ it('should update value inside formik context', async () => {
 it('should update `touched` state inside formik context', async () => {
     const formikRef = createRef<FormikProps<Values>>();
 
-    renderWithFormik<Values>(<Switch name="field" data-testid="input" />, {
+    renderWithFormik<Values>(<Checkbox name="field" data-testid="input" />, {
         initialValues: { field: '' },
         innerRef: formikRef,
     });
@@ -63,7 +64,7 @@ it('should update `touched` state inside formik context', async () => {
 });
 
 it('should not render error from formik context if not touched', () => {
-    renderWithFormik<Values>(<Switch name="field" />, {
+    renderWithFormik<Values>(<Checkbox name="field" />, {
         initialValues: { field: '' },
         initialErrors: { field: 'Error text' },
     });
@@ -72,7 +73,7 @@ it('should not render error from formik context if not touched', () => {
 });
 
 it('should not render error from formik context if `error={false}` provided', () => {
-    renderWithFormik<Values>(<Switch name="field" error={false} />, {
+    renderWithFormik<Values>(<Checkbox name="field" error={false} />, {
         initialValues: { field: '' },
         initialErrors: { field: 'Error text' },
         initialTouched: { field: true },
@@ -82,7 +83,7 @@ it('should not render error from formik context if `error={false}` provided', ()
 });
 
 it('should render provided error instead of the one from formik context', () => {
-    renderWithFormik<Values>(<Switch name="field" error="Custom error" />, {
+    renderWithFormik<Values>(<Checkbox name="field" error="Custom error" />, {
         initialValues: { field: '' },
         initialErrors: { field: 'Error text' },
         initialTouched: { field: true },
@@ -93,7 +94,7 @@ it('should render provided error instead of the one from formik context', () => 
 });
 
 it('should render error from formik context if touched', () => {
-    renderWithFormik<Values>(<Switch name="field" />, {
+    renderWithFormik<Values>(<Checkbox name="field" />, {
         initialValues: { field: '' },
         initialErrors: { field: 'Error text' },
         initialTouched: { field: true },
