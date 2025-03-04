@@ -5,6 +5,7 @@ import {
     SwitchProps as CoreComponentsSwitchProps,
 } from '@alfalab/core-components/switch';
 import { useFieldBlurState } from '../hooks/useFieldBlurState';
+import { useFieldOkState } from '../hooks/useFieldOkState';
 import { SetRequired } from '../types/SetRequired';
 
 export type SwitchProps = SetRequired<CoreComponentsSwitchProps, 'name'>;
@@ -12,6 +13,7 @@ export type SwitchProps = SetRequired<CoreComponentsSwitchProps, 'name'>;
 export const Switch: FC<SwitchProps> = (props) => {
     const { name, onChange, ...restProps } = props;
     const [{ value, ...field }] = useField({ name, type: 'checkbox' });
+    const { error } = useFieldOkState(props);
     const blurState = useFieldBlurState(props);
 
     const handleChange: SwitchProps['onChange'] = (event, payload) => {
@@ -23,6 +25,12 @@ export const Switch: FC<SwitchProps> = (props) => {
     };
 
     return (
-        <CoreComponentsSwitch {...restProps} {...field} {...blurState} onChange={handleChange} />
+        <CoreComponentsSwitch
+            {...restProps}
+            {...field}
+            {...blurState}
+            error={error}
+            onChange={handleChange}
+        />
     );
 };
