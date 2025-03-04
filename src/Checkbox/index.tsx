@@ -4,6 +4,7 @@ import {
     Checkbox as CoreComponentsCheckbox,
     CheckboxProps as CoreComponentsCheckboxProps,
 } from '@alfalab/core-components/checkbox';
+import { useFieldOkState } from '../hooks/useFieldOkState';
 import { SetRequired } from '../types/SetRequired';
 
 export type CheckboxProps = SetRequired<CoreComponentsCheckboxProps, 'name'>;
@@ -13,6 +14,7 @@ export type CheckboxProps = SetRequired<CoreComponentsCheckboxProps, 'name'>;
 export const Checkbox: FC<CheckboxProps> = (props) => {
     const { name, onChange, ...restProps } = props;
     const [{ value, ...field }, , form] = useField({ name: 'field', type: 'checkbox' });
+    const { error } = useFieldOkState(props);
 
     const handleChange: CheckboxProps['onChange'] = (event, payload) => {
         //TODO: после фикса в коре заменить на -  field.onChange(event)
@@ -32,6 +34,7 @@ export const Checkbox: FC<CheckboxProps> = (props) => {
         <CoreComponentsCheckbox
             {...restProps}
             {...field}
+            error={error}
             onChange={handleChange}
             onBlur={handleBlur}
         />
