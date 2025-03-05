@@ -13,7 +13,7 @@ export type CheckboxProps = SetRequired<CoreComponentsCheckboxProps, 'name'>;
 //https://github.com/core-ds/core-components/issues/1602
 export const Checkbox: FC<CheckboxProps> = (props) => {
     const { name, onChange, ...restProps } = props;
-    const [{ value, ...field }, , form] = useField({ name: 'field', type: 'checkbox' });
+    const [{ value, ...field }, , form] = useField({ name, type: 'checkbox' });
     const { error } = useFieldOkState(props);
 
     const handleChange: CheckboxProps['onChange'] = (event, payload) => {
