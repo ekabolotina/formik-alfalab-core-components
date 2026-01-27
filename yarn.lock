@@ -7,87 +7,1627 @@
   resolved "https://registry.yarnpkg.com/@adobe/css-tools/-/css-tools-4.0.1.tgz#b38b444ad3aa5fedbb15f2f746dcd934226a12dd"
   integrity sha512-+u76oB43nOHrF4DDWRLWDCtci7f3QJoEBigemIdIeTi1ODqjx6Tad9NCVnPRwewWlKkVab5PlK8DCtPTyX7S8g==
 
-"@alfalab/core-components@^48.5.0":
-  version "48.5.0"
-  resolved "https://registry.yarnpkg.com/@alfalab/core-components/-/core-components-48.5.0.tgz#db86b8843e9dbfd9b572bfc29d80c82b547891f9"
-  integrity sha512-BDZYvp9c6cg2OI9p6XcpYkzYuCQD69KQ2o0NjgoXPjSceQhVpiHOD5l+OM8bJEeViWCKUuU6pffVToNjSPWtGg==
+"@alfalab/core-components-accordion@^2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-accordion/-/core-components-accordion-2.0.3.tgz#4cb1d80ea4f3badc37928b6110d1b5001f45b02d"
+  integrity sha512-47iQRGo3uuE4TrGZu+33fN4kciZ6Gj66j/4HyDy/veW2sf/GS0xzjdHiWmGTQ3ct7SbnO2YKg9oEYQG+LcUG7Q==
   dependencies:
-    "@alfalab/data" "^1.8.0"
-    "@alfalab/hooks" "^1.13.0"
-    "@alfalab/icons-glyph" "^2.189.0"
-    "@alfalab/icons-logotype" "^2.27.0"
-    "@alfalab/react-canvas-pattern-lock" "^2.0.7"
-    "@alfalab/utils" "^1.15.2"
-    "@dnd-kit/core" "^6.0.7"
-    "@dnd-kit/sortable" "^7.0.2"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/core-components-typography" "^5.0.3"
+    "@alfalab/icons-glyph" "^2.247.0"
     "@juggle/resize-observer" "^3.3.1"
-    "@maskito/core" "^1.7.0"
-    "@maskito/react" "^1.7.0"
-    "@popperjs/core" "^2.11.8"
-    "@types/deep-equal" "^1.0.4"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-action-button@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-action-button/-/core-components-action-button-2.0.2.tgz#047e626966ebc821658d97b274b5e20cfe87492e"
+  integrity sha512-GxukLy1E4OnfRJ/TuLekH+WRpznuZAq1+GRH0rKJ+YXzZmcjC9otqUdFKBhxiBsMh77DqjNhAA5+IWcwpn+mJA==
+  dependencies:
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/core-components-spinner" "^5.0.2"
+    "@alfalab/hooks" "^1.13.1"
+    classnames "^2.5.1"
+    react-merge-refs "^1.1.0"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-alert@^5.0.5":
+  version "5.0.5"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-alert/-/core-components-alert-5.0.5.tgz#7dd5e766f4c54dc88ee9473c0791ae2dbafa3660"
+  integrity sha512-zrLYtWvwGp7fqbnf+PmcRP0Hne0ZHW8+V2iU57iK6D0ruNgJbdmMXl6VuzrKj1/AB9hEaJ66O8oviuC3pY2HFQ==
+  dependencies:
+    "@alfalab/core-components-plate" "^8.2.0"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-amount-input@^8.1.5":
+  version "8.1.5"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-amount-input/-/core-components-amount-input-8.1.5.tgz#42ef1754e165733dae197db680e9fc79087db788"
+  integrity sha512-DyWQvl7DGH380Bwq/XiTKdTiZ5UVPrSyralGwcWsjp459gSzuWlOungnSb3/WswMSdFhdkh6j4azjsLmjW8NFw==
+  dependencies:
+    "@alfalab/core-components-input" "^16.0.4"
+    "@alfalab/core-components-number-input" "^3.0.5"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/core-components-with-suffix" "^5.0.4"
+    "@alfalab/data" "^1.9.2"
+    "@alfalab/utils" "^1.18.0"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-amount@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-amount/-/core-components-amount-4.0.0.tgz#293faf3fdf5c5479baa61d083356b599ed5425cf"
+  integrity sha512-aT0ULhiM+NeUbTj4PEgbRzQEapm9ITu+91ody6NQVvQ4v5SFWuYydkjNwXye7g90Mpy62hDSY22MTURHO8WsPw==
+  dependencies:
+    "@alfalab/data" "^1.9.2"
+    "@alfalab/utils" "^1.18.0"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-attach@^7.1.0":
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-attach/-/core-components-attach-7.1.0.tgz#ff3f178d8ed0fe33d8fb4c2e21603d1868594b25"
+  integrity sha512-XB+jAd0Daf9tnvU83YmTYknpCimAo65SfL5/ucL+0vqqg9cs8MmHtdxUdGs0hDw9dtSy1CXJrwEsUkx+d9MtGw==
+  dependencies:
+    "@alfalab/core-components-button" "^12.1.0"
+    "@alfalab/core-components-keyboard-focusable" "^5.0.0"
+    "@alfalab/core-components-progress-bar" "^4.0.0"
+    "@alfalab/icons-glyph" "^2.247.0"
+    "@alfalab/utils" "^1.18.0"
+    classnames "^2.5.1"
+    react-merge-refs "^1.1.0"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-backdrop@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-backdrop/-/core-components-backdrop-4.0.0.tgz#d4f27644301e8c3989108f131e6532d2130a7f88"
+  integrity sha512-6BbXiV32nqMQMpeDIKaigiSMkPAUzIFgK8cv2DhKOvZJbEcLfpPwzExgvfcCLf7Rt53hZh1aoa3WBdzEk1aLCg==
+  dependencies:
     "@types/react-transition-group" "^4.4.5"
-    can-use-dom "^0.1.0"
-    classnames "^2.3.1"
-    compute-scroll-into-view "^3.1.0"
+    classnames "^2.5.1"
+    react-transition-group "^4.4.5"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-badge@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-badge/-/core-components-badge-6.0.0.tgz#e430df1b3847b024082c9346913710aac0fd2010"
+  integrity sha512-1yq1qKch7p7E6ZgSOZCfJ4A/Hake3CKHrfDGHQwlIxTMjE1AP+TSqhS0AeIOGTeQwM+eKOep/METY/3GpgoN0A==
+  dependencies:
+    "@alfalab/core-components-types" "^1.0.0"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-bank-card@^6.0.4":
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-bank-card/-/core-components-bank-card-6.0.4.tgz#75b8f0e60e6d9784596bb822beadd32cdba8d029"
+  integrity sha512-KBJb7xOss8l+cFq+tdtM4dFoUOy764FihBUTKzc7dJDrAQTA7DIVrvHz2efS7SHxivwCf8KX0/zBqLC8RS7Hfg==
+  dependencies:
+    "@alfalab/core-components-masked-input" "^7.0.4"
+    "@alfalab/icons-glyph" "^2.247.0"
+    "@alfalab/icons-logo" "^1.48.0"
+    "@alfalab/icons-logotype" "^2.34.0"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-base-modal@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-base-modal/-/core-components-base-modal-6.1.0.tgz#155f641038271653966b410e115ad59aff7b94af"
+  integrity sha512-EVJNaZR5F56DgTlKC2qKgg+nm369jDOhz34FZGvbIt2ZUz7tKtesD2fjbXNplUJFbDzsX7A+w9DDRrtUlB/NJQ==
+  dependencies:
+    "@alfalab/core-components-backdrop" "^4.0.0"
+    "@alfalab/core-components-global-store" "^3.0.0"
+    "@alfalab/core-components-portal" "^4.0.2"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/core-components-stack" "^6.0.0"
+    "@juggle/resize-observer" "^3.3.1"
+    "@types/react-transition-group" "^4.4.5"
+    classnames "^2.5.1"
+    react-focus-lock "^2.12.1"
+    react-merge-refs "^1.1.0"
+    react-remove-scroll "^2.5.5"
+    react-transition-group "^4.4.5"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-bottom-sheet@^7.4.2":
+  version "7.4.2"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-bottom-sheet/-/core-components-bottom-sheet-7.4.2.tgz#ddb4632a78a46e5d7b2d39d4c681eba6a83d9a66"
+  integrity sha512-rr7NrOpAWUz8svHrL/0q/brgHlo+rUraNRj8jKcX69E0wSL6nUN/SWxcPBhASVNtJ9YBrQIcVY0ADqNch3czjw==
+  dependencies:
+    "@alfalab/core-components-backdrop" "^4.0.0"
+    "@alfalab/core-components-base-modal" "^6.1.0"
+    "@alfalab/core-components-navigation-bar-private" "^1.1.5"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/core-components-types" "^1.0.0"
+    classnames "^2.5.1"
+    react-div-100vh "^0.7.0"
+    react-merge-refs "^1.1.0"
+    react-swipeable "^7.0.0"
+    react-transition-group "^4.4.5"
+    tslib "^2.4.0"
+    use-sync-external-store "^1.4.0"
+
+"@alfalab/core-components-button@^12.1.0":
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-button/-/core-components-button-12.1.0.tgz#e2e80ee647f6cc4e3292dc4bbd90443a9f59d0e1"
+  integrity sha512-6i3Xr8+/k31UOArfhr1emwAFg4v3s4FBQSTpXIclm7HlvLh2J7gtcGGaCJzafqadknn3zICJ/ddVaJxCdaPJaw==
+  dependencies:
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/core-components-spinner" "^5.0.2"
+    "@alfalab/hooks" "^1.13.1"
+    classnames "^2.5.1"
+    react-merge-refs "^1.1.0"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-calendar-input@^11.0.10":
+  version "11.0.10"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-calendar-input/-/core-components-calendar-input-11.0.10.tgz#3702096b543c937c4d9db3a494a12677b7766e11"
+  integrity sha512-qpd9xH/QeBoKRj5q26GlDDZK8XB0xfVeLmkme4QpXYC+T65R4MAkj7asj2zM5/QYz/w+Gtm3Kcy/pxCtrBynbQ==
+  dependencies:
+    "@alfalab/core-components-calendar" "^8.0.9"
+    "@alfalab/core-components-date-input" "^5.0.4"
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/core-components-popover" "^7.1.1"
+    "@alfalab/icons-glyph" "^2.247.0"
+    classnames "^2.5.1"
     date-fns "^2.16.1"
-    deep-equal "^2.2.3"
-    downshift "8.4.0"
+    react-merge-refs "^1.1.0"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-calendar-range@^8.0.10":
+  version "8.0.10"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-calendar-range/-/core-components-calendar-range-8.0.10.tgz#abca57227ef3f1d521ed5708d6e6423189e196b9"
+  integrity sha512-6IAt1X1cSyJqZY5QbBlXf+Fiz3zlmnI456Ujvs4Ayr5BYDycCcn0d5rKk5CY17XT1blwwo8XhsGjtPLWerLRPg==
+  dependencies:
+    "@alfalab/core-components-calendar" "^8.0.9"
+    "@alfalab/core-components-calendar-input" "^11.0.10"
+    "@alfalab/core-components-date-input" "^5.0.4"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/hooks" "^1.13.1"
+    classnames "^2.5.1"
+    date-fns "^2.16.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-calendar-with-skeleton@^6.0.9":
+  version "6.0.9"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-calendar-with-skeleton/-/core-components-calendar-with-skeleton-6.0.9.tgz#8693e64f0cb64c34deb393dcba79549086a48b19"
+  integrity sha512-vUXrfqI1BGBaKND3OmQFk5BhSq/KCif+0+B/gHAXGNT1mrVf0Z03se6zm/yySlFPg7Jx97W+TqmDJ6V9WHuzGg==
+  dependencies:
+    "@alfalab/core-components-calendar" "^8.0.9"
+    "@alfalab/core-components-skeleton" "^6.0.1"
+    classnames "^2.5.1"
+    react-transition-group "^4.4.5"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-calendar@^8.0.9":
+  version "8.0.9"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-calendar/-/core-components-calendar-8.0.9.tgz#1788ba094bdeb3e3f5adaeaf5c656f237a113cc4"
+  integrity sha512-OWUelYu4MPVIsRGZnh+pXkq7SAHGejeTYPbp+SoyG7icJqnBe93MbZ6SImlCLPbsiIeuB6oI3WB2mIvCPvRg7w==
+  dependencies:
+    "@alfalab/core-components-button" "^12.1.0"
+    "@alfalab/core-components-icon-button" "^7.0.4"
+    "@alfalab/core-components-modal" "^10.0.9"
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/core-components-typography" "^5.0.3"
+    "@alfalab/hooks" "^1.13.1"
+    "@alfalab/icons-glyph" "^2.247.0"
+    "@juggle/resize-observer" "^3.3.1"
+    classnames "^2.5.1"
+    date-fns "^2.16.1"
+    react-merge-refs "^1.1.0"
+    react-transition-group "^4.4.5"
+    react-virtuoso "^4.12.5"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-card-image@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-card-image/-/core-components-card-image-4.1.0.tgz#84a837ee490cf75c0a4e56439767ca9fe3f4557c"
+  integrity sha512-/MTh7w7hUkSrAGyBzg6zLcTQLklf8Zphhyu+m28097IEjFV5f6oInPswZhMcH7oZsmDNXSEuL+wJ6SBS7pnjIQ==
+  dependencies:
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-cdn-icon@^6.0.2":
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-cdn-icon/-/core-components-cdn-icon-6.0.2.tgz#e8c0c84b8f56b164c51b64994a929cbe1ab76b6f"
+  integrity sha512-WaKVZ7HlcCA4pPhj8NzjP0vG/D4NYZHGOM7WbdtLKsJq9sTiX9e+BB8haMujCBWHE9/sf0KIf0+WoWnYYOibMw==
+  dependencies:
+    "@alfalab/core-components-shared" "^1.1.1"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+    use-sync-external-store "^1.4.0"
+
+"@alfalab/core-components-chart@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-chart/-/core-components-chart-4.1.0.tgz#440d831b44b3827f52fb4181163d96056f250498"
+  integrity sha512-LS1y6CbtusdI9o0orT+TNEUoLEjQs5oXmY8phR6/S/2yThGh/yWbwC6Vw/EYN7NkiMcaPBILsgYk2jnQE1UM5A==
+  dependencies:
+    "@alfalab/core-components-typography" "^5.0.3"
+    classnames "^2.5.1"
+    recharts "^2.12.7"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-checkbox-group@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-checkbox-group/-/core-components-checkbox-group-5.1.1.tgz#cf984056f7e9645368de6a510e902363e1191668"
+  integrity sha512-8/e2DxzLcDJezjh1pCxKhA8NPRAT+lpusLMvD6R8MBirqrLfNMNZPi9cVsOoAqb0BreLFa8fmmAFFy2Ac6TgNQ==
+  dependencies:
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/core-components-shared" "^1.1.1"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-checkbox@^5.0.2":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-checkbox/-/core-components-checkbox-5.0.2.tgz#96e25723432983a2ab56b9a0523783f029d0b434"
+  integrity sha512-/UwG8yCoIgihWvDjs/0ipWscxSw4ZgwwzZs/bDbMHEQZkBkRURyd83jpEBHmmTDkGrXP3leIbbRxYD2IWERL8w==
+  dependencies:
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/hooks" "^1.13.1"
+    classnames "^2.5.1"
+    react-merge-refs "^1.1.0"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-circular-progress-bar@^4.0.3":
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-circular-progress-bar/-/core-components-circular-progress-bar-4.0.3.tgz#2b7e80d55e2a14a40e7cfb0e3ce76bc5947c73ce"
+  integrity sha512-7ZcE3J/+UG4PyMRDLJNUidGrF+1Zsf+hck+/z8l9kGQaHFu0lZ3OJDiwhStNBqtx92Pnkt2moTv21SIY8JS+jw==
+  dependencies:
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/core-components-typography" "^5.0.3"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-code-input@^4.1.1":
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-code-input/-/core-components-code-input-4.1.1.tgz#2a68f1ace59acb7a30e55cbd78d9eab452e53c64"
+  integrity sha512-+2WSFwlDiMRmfQtFuPZRQR2nY+GPzdHK3guDRMTNVT8asEwRwBzjpf2vNb4+6+XGnT9jP3W3P1zXzIyp/ssQLw==
+  dependencies:
+    "@alfalab/core-components-mq" "^5.0.2"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-collapse@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-collapse/-/core-components-collapse-5.1.0.tgz#d742eca9177532148e7137ed303f2d160557ea25"
+  integrity sha512-T+K7Zdpw7kjyNf/muMKpx4hf7WeStk7xw2PBR7Hfe9FJ9SbiIiSlPdw03ed/PozlfxLghKXtFPdilU9L6KfkLw==
+  dependencies:
+    "@alfalab/core-components-link" "^6.1.0"
+    "@alfalab/icons-glyph" "^2.247.0"
+    "@juggle/resize-observer" "^3.3.1"
+    classnames "^2.5.1"
+    lodash "^4.17.21"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-comment@^3.0.3":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-comment/-/core-components-comment-3.0.3.tgz#5aa2afe16e9c935f928e43a6f0b0550539143722"
+  integrity sha512-Fv9obI0NZtFpv5vZv31Zu/47R5DB5qORuepz+ckELmG7p9eqMiQCw9J2w259eFTp3/eaV2pbyzepAqEhcaZ8yA==
+  dependencies:
+    "@alfalab/core-components-typography" "^5.0.3"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-config@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-config/-/core-components-config-1.0.0.tgz#1f89e4c5ff190e2f67777e8c004da4b5785a27ae"
+  integrity sha512-5bjj6Yg/N/3NVK2yhj3ksdXPwdAbI/8wqy1irRiuwuzdU36KZ0DngZ6Lon+8zDWAUbNTpiKaMYkFby7JxssTyw==
+  dependencies:
+    tslib "^2.4.0"
+
+"@alfalab/core-components-confirmation-v1@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-confirmation-v1/-/core-components-confirmation-v1-2.0.4.tgz#074d90fc2d0f96f833a414ff325b066c4e0c055a"
+  integrity sha512-FCSFlw/XCq6mUADf4WhEadWPHJVB9HajGNSN7KNflMphsuZQKkKcEOM0SujZjF2fSYc1b1L36yXyJRLpKiEbnw==
+  dependencies:
+    "@alfalab/core-components-button" "^12.1.0"
+    "@alfalab/core-components-link" "^6.1.0"
+    "@alfalab/core-components-loader" "^4.0.0"
+    "@alfalab/hooks" "^1.13.1"
+    "@alfalab/icons-glyph" "^2.247.0"
+    "@alfalab/utils" "^1.18.0"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-confirmation@^14.3.1":
+  version "14.3.1"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-confirmation/-/core-components-confirmation-14.3.1.tgz#8d764f926e8545a89f6485bc835f30a34663772a"
+  integrity sha512-dsg7ECh1olYKcQJlfoR3occ+cv/p7luQMx2C91TN3pnEyW7PxMMnZl3K67t9TieAjXTcsu4qzVcQHH9F43xeZw==
+  dependencies:
+    "@alfalab/core-components-button" "^12.1.0"
+    "@alfalab/core-components-code-input" "^4.1.1"
+    "@alfalab/core-components-link" "^6.1.0"
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/core-components-spinner" "^5.0.2"
+    "@alfalab/core-components-typography" "^5.0.3"
+    "@alfalab/hooks" "^1.13.1"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-custom-button@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-custom-button/-/core-components-custom-button-4.1.0.tgz#861824b71323e5d49462d190b9bd2161fced44d7"
+  integrity sha512-7Cr9mGiVDFidAEMsKQIA3dJLJb7XI59dmUHdo4QP7cyPkLyBgC3AmCt2gZE6jS9eFJE+gIMDRTQPwUBV/HqBsQ==
+  dependencies:
+    "@alfalab/core-components-button" "^12.1.0"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-custom-picker-button@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-custom-picker-button/-/core-components-custom-picker-button-3.1.0.tgz#ea25f9bcbf11a782c0018db84449c24bc1782510"
+  integrity sha512-9KwZTUHKpsjfg3PdX+m5fUuHhfES4430u0WVVmzAKuf6NzJkDM0JM5yOjb2dlSXFZUGy+xUJ1meQVWtjZ6fZjg==
+  dependencies:
+    "@alfalab/core-components-custom-button" "^4.1.0"
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/core-components-picker-button" "^12.1.0"
+    "@alfalab/core-components-select" "^18.2.8"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-date-input@^5.0.4":
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-date-input/-/core-components-date-input-5.0.4.tgz#51b051ca36898de67bab5e6695c924d6229f80a9"
+  integrity sha512-IBWqBk7xDi1ChusCoH8Bsp7dEyn9tRpZwME7J8YJwuH+rf6YPf05Ofh/S9Jy2p8nEsHIUfMOONjBSpPIf5TYgw==
+  dependencies:
+    "@alfalab/core-components-input" "^16.0.4"
+    date-fns "^2.16.1"
+    react-merge-refs "^1.1.0"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-date-range-input@^4.0.10":
+  version "4.0.10"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-date-range-input/-/core-components-date-range-input-4.0.10.tgz#2cbb62c76596d27444d213f0af5251c9aec2850f"
+  integrity sha512-DQrB221BE1lUSvrUoYRkauxfdNNSAAOQSFYQhSYxk1aKdVz2h4ICKOZWQdJGdc5onjrlq8WjRvLRceL9F4RDXg==
+  dependencies:
+    "@alfalab/core-components-calendar" "^8.0.9"
+    "@alfalab/core-components-icon-button" "^7.0.4"
+    "@alfalab/core-components-input" "^16.0.4"
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/core-components-popover" "^7.1.1"
+    "@alfalab/hooks" "^1.13.1"
+    "@alfalab/icons-glyph" "^2.247.0"
+    classnames "^2.5.1"
+    date-fns "^2.16.1"
+    react-merge-refs "^1.1.0"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-date-time-input@^5.0.10":
+  version "5.0.10"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-date-time-input/-/core-components-date-time-input-5.0.10.tgz#3070c808c83000138157a39d746c44e3825692a5"
+  integrity sha512-+OkFELNZFd6IWvrL77uLOw2ht8I7B1fIWuUDvRtoJOxlIoXLqxboIXyHaa03DYFprEanr168Rvc71V2CZBi69w==
+  dependencies:
+    "@alfalab/core-components-calendar" "^8.0.9"
+    "@alfalab/core-components-icon-button" "^7.0.4"
+    "@alfalab/core-components-input" "^16.0.4"
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/core-components-popover" "^7.1.1"
+    "@alfalab/hooks" "^1.13.1"
+    "@alfalab/icons-glyph" "^2.247.0"
+    classnames "^2.5.1"
+    date-fns "^2.16.1"
+    react-merge-refs "^1.1.0"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-divider@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-divider/-/core-components-divider-4.0.0.tgz#44910e5169145bcc458f02f36c465bb722ab6bcb"
+  integrity sha512-C94p3XX9GOVwA4kIZjzoEuSu+ONdIY5xBQvFFOJzu7bpsHHmBv+3qsA4d2V56wCHLcL93jeIvotqS3I//SjECA==
+  dependencies:
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-drawer@^6.0.3":
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-drawer/-/core-components-drawer-6.0.3.tgz#181224147f85bfbc4ed56450e05d7bdde606a3a6"
+  integrity sha512-57lPF9N1tMD+BTdArV0DT3QH5aYowKWtal63eIWe6tJGboNVx0KyiwLwmzWqE624a3JDvfGpZL9pq327FbWjGg==
+  dependencies:
+    "@alfalab/core-components-base-modal" "^6.1.0"
+    classnames "^2.5.1"
+    react-transition-group "^4.4.5"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-dropzone@^5.0.1":
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-dropzone/-/core-components-dropzone-5.0.1.tgz#462b1bc0061142bcefdc2c9fbe9c9e3362e91a01"
+  integrity sha512-pocbkscK0B+Nb43r8i9yEP/B2/IXerTZSgxIq+HY3czZHeWAjfFEOBHN8L5LjJsvHyQ/OzCMZhaj6Zq6SBhRbQ==
+  dependencies:
+    "@alfalab/icons-glyph" "^2.247.0"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-file-upload-item-v1@^2.0.5":
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-file-upload-item-v1/-/core-components-file-upload-item-v1-2.0.5.tgz#0cf4d5f942acd16c763a29b9b01736b53583f603"
+  integrity sha512-oLYkZiKw/R455W+pPTetIENeSOjSamKE0iB+itM0Z9++TNN7TzJKC2jXH5KSnIz8NoEnEnaUTUMV/yLqlAd8rQ==
+  dependencies:
+    "@alfalab/core-components-icon-button" "^7.0.4"
+    "@alfalab/core-components-link" "^6.1.0"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/core-components-spinner" "^5.0.2"
+    "@alfalab/icons-glyph" "^2.247.0"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-file-upload-item@^7.3.0":
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-file-upload-item/-/core-components-file-upload-item-7.3.0.tgz#95cee08d9148fc055367d0dc4524b4124902059c"
+  integrity sha512-1gRHh0jSRzyOOyZ+oLhGoqBrtMAFBn4Miq8a8xnepcq9Nh2A6iVLFtpVCGiy+6jt6beyHTxyKmQWgU/BEqLnug==
+  dependencies:
+    "@alfalab/core-components-icon-button" "^7.0.4"
+    "@alfalab/core-components-icon-view" "^4.0.1"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/core-components-typography" "^5.0.3"
+    "@alfalab/hooks" "^1.13.1"
+    "@alfalab/icons-glyph" "^2.247.0"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-filter-tag@^6.0.3":
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-filter-tag/-/core-components-filter-tag-6.0.3.tgz#317d244028596a626c0f56c8d96b7cb5af68263d"
+  integrity sha512-43mWMlypf5otpGUWPDpbvRXPGxMx8j3v7uEI/QRrwHWVwHkcdd19LiBLsSIglYjcPAYL4udlJ1XYIRzckOPsiA==
+  dependencies:
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/hooks" "^1.13.1"
+    "@alfalab/icons-glyph" "^2.247.0"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-form-control@^13.0.2":
+  version "13.0.2"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-form-control/-/core-components-form-control-13.0.2.tgz#8df36184b8dfd09d3c6de3535d2f5b4537c53948"
+  integrity sha512-aZjYYxpEdodfotJNXVlIhJawUZHYMKUNizgm/uxvMrI3cmKOCgXSDnMcVDTMT9JuRfIzuXDI3x//gJYp/OG24w==
+  dependencies:
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/core-components-shared" "^1.1.1"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-gallery@^6.0.12":
+  version "6.0.12"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-gallery/-/core-components-gallery-6.0.12.tgz#8a9f64ba7ecc9ab2433637b0756a30887768e1c7"
+  integrity sha512-7SNFX1kIMfmhfxO2zCLoU8kdeYWSTuneuzHlDp/nxXdSyOeleUUqK/vy7AWQQFQF282uK7+j49qRJlD2gaufOQ==
+  dependencies:
+    "@alfalab/core-components-base-modal" "^6.1.0"
+    "@alfalab/core-components-button" "^12.1.0"
+    "@alfalab/core-components-icon-button" "^7.0.4"
+    "@alfalab/core-components-icon-view" "^4.0.1"
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/core-components-spinner" "^5.0.2"
+    "@alfalab/core-components-tooltip" "^8.0.11"
+    "@alfalab/core-components-typography" "^5.0.3"
+    "@alfalab/hooks" "^1.13.1"
+    "@alfalab/icons-glyph" "^2.247.0"
+    classnames "^2.5.1"
     element-closest "^3.0.2"
     hls.js "^1.5.13"
-    intersection-observer "^0.12.0"
+    lodash "^4.17.21"
+    swiper "^6.8.2"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-gap@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-gap/-/core-components-gap-2.0.0.tgz#fac0143a891a5595d21bc9ed638d1640c1c8daec"
+  integrity sha512-ziEQCxfObZu7l1kqkG0//SUovIFp2969Tlf/+nZHeHPp+FnTGFx12ZDjxH7yRcvazBZlu4fV4uSAQkqU55/sJQ==
+  dependencies:
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-generic-wrapper@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-generic-wrapper/-/core-components-generic-wrapper-2.0.0.tgz#65fbf2db73d583edf3664a7b677ef1e4df281344"
+  integrity sha512-EelU0+rHuiKWGi1uqQKGLca74kU96Q/Qls++2KmBConjlV7oQ5rBKNxh6LmS0xzDB5Bsde+lmTxZL15yapfQFg==
+  dependencies:
+    "@alfalab/core-components-gap" "^2.0.0"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-global-store@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-global-store/-/core-components-global-store-3.0.0.tgz#db81df09fdc0f404d133e481344e7518629f33d9"
+  integrity sha512-IDQC7yo7Jxo3jVJer7K7qdpL98wArc9slcgkcL9QQc/AtbkcsfFsQZxLoCjUL9fU7bBnljrif3aLwRxvkexOSA==
+  dependencies:
+    tslib "^2.4.0"
+
+"@alfalab/core-components-grid@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-grid/-/core-components-grid-4.0.0.tgz#4d3b7ac87759a5c339ce70e926f3d0299c8f0582"
+  integrity sha512-KN/Q41UIRifOjAjLZnd2OrOA+bSdXarM44C0V9AVerYcX4eOkDPvqmQBML5oypImD7iIX9e0Jvi+QTBLjB53Gw==
+  dependencies:
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-hatching-progress-bar@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-hatching-progress-bar/-/core-components-hatching-progress-bar-3.0.0.tgz#c86d9d17bb69627ce2345e487d471e7b1eb4e540"
+  integrity sha512-1GDXg66AQuY0VPEfY2Vqocrd4UsGOGk+flBuwCjngB4/7A6ai6e3qFu6Be8+QNRDE7P5k9DcAVkN7lv/AiP8zg==
+  dependencies:
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-icon-button@^7.0.4":
+  version "7.0.4"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-icon-button/-/core-components-icon-button-7.0.4.tgz#f1a761f97d9fa325dd5ae193d61f8384c5da654e"
+  integrity sha512-XSeyexRukR0t6X5klRNB9orGXrTM7eyRRRFTTVBhFEKa7YKCZj//qzx8Rj1/YxyGI7NmegKgqWziVwcO+1JIPA==
+  dependencies:
+    "@alfalab/core-components-button" "^12.1.0"
+    "@alfalab/core-components-mq" "^5.0.2"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-icon-view@^4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-icon-view/-/core-components-icon-view-4.0.1.tgz#b38ee32994f922b0c4f36e360ae1b416e1194ca0"
+  integrity sha512-D6cRMA3niPNkIViYuoiBKWCyVtRd/Ymtu4GCpWeaKuG/5mS+0VLP/hS900oodwdSponBcrw2S8fQbGSjFrakcw==
+  dependencies:
+    "@alfalab/hooks" "^1.13.1"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-indicator@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-indicator/-/core-components-indicator-3.0.0.tgz#7c6e33868943aa3cb8f5e83c7a6f1b814179c9ae"
+  integrity sha512-iP3h4AmQzHGiAP+bdCeepV4kompM4pvczfXzFJVMGibWt3BX+dX/SkUzrc7cF/J8Ff+F4xtxqlFrNp2rjTZWtQ==
+  dependencies:
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-input-autocomplete@^13.1.0":
+  version "13.1.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-input-autocomplete/-/core-components-input-autocomplete-13.1.0.tgz#a0f2f0e71235c31df34b1af582cecb86b61996bd"
+  integrity sha512-kwpnjGYtCu1a0a+lyvpqVxW3RTZj68UcqLzpqLzvxIZ+csPUinKPQ3Dg6aOgJCyFl5Tf6n72gF95ebs+DX6yTw==
+  dependencies:
+    "@alfalab/core-components-form-control" "^13.0.2"
+    "@alfalab/core-components-input" "^16.0.4"
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/core-components-popover" "^7.1.1"
+    "@alfalab/core-components-select" "^18.2.8"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/core-components-status-badge" "^2.0.1"
+    "@alfalab/hooks" "^1.13.1"
+    "@maskito/core" "^1.7.0"
+    classnames "^2.5.1"
+    lodash "^4.17.21"
+    react-merge-refs "^1.1.0"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-input@^16.0.4":
+  version "16.0.4"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-input/-/core-components-input-16.0.4.tgz#49fdfef90389bac232feab6a34a6d161dd3ecbdd"
+  integrity sha512-Yx4pdf9Z4dambqeSnQRg3+S4wyxb370UUuNnxc9OFCzXL/PkJPBOnEP6Y9ahO8oklEMGbbngOF+g6Pm2sAPOeQ==
+  dependencies:
+    "@alfalab/core-components-button" "^12.1.0"
+    "@alfalab/core-components-form-control" "^13.0.2"
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/core-components-status-badge" "^2.0.1"
+    "@alfalab/hooks" "^1.13.1"
+    "@alfalab/icons-glyph" "^2.247.0"
+    classnames "^2.5.1"
+    react-merge-refs "^1.1.0"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-international-phone-input@^3.2.8":
+  version "3.2.8"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-international-phone-input/-/core-components-international-phone-input-3.2.8.tgz#a2191b3dd74694cf3b972ec7f9fab01fcb54ac24"
+  integrity sha512-grPWUWad1icf2eVTTKQF93ifSTB+8rohrx+cnc4zP4omk+GdIJqokUmkCStuum27lxMT1vscXfFewyvjtdTrUw==
+  dependencies:
+    "@alfalab/core-components-input" "^16.0.4"
+    "@alfalab/core-components-input-autocomplete" "^13.1.0"
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/core-components-select" "^18.2.8"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/core-components-types" "^1.0.0"
+    "@alfalab/hooks" "^1.13.1"
+    "@alfalab/icons-glyph" "^2.247.0"
+    "@maskito/core" "^1.7.0"
+    "@maskito/react" "^1.7.0"
+    classnames "^2.5.1"
+    react-merge-refs "^1.1.0"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-intl-phone-input@^10.0.11":
+  version "10.0.11"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-intl-phone-input/-/core-components-intl-phone-input-10.0.11.tgz#69a45f5a75b269cc1eeb8a40b9ab2095042f820a"
+  integrity sha512-rUe3qFSP9RGBsKmhLRzVR2CdEbXwQHx5ZuLMa02oFpiVwRIQwM54vB1M8MjfCND/OPI8owcCpZFJcTzPcBc9Tw==
+  dependencies:
+    "@alfalab/core-components-input-autocomplete" "^13.1.0"
+    "@alfalab/core-components-select" "^18.2.8"
+    "@alfalab/hooks" "^1.13.1"
+    "@alfalab/icons-glyph" "^2.247.0"
+    "@alfalab/utils" "^1.18.0"
+    classnames "^2.5.1"
     libphonenumber-js "^1.10.30"
+    react-merge-refs "^1.1.0"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-keyboard-focusable@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-keyboard-focusable/-/core-components-keyboard-focusable-5.0.0.tgz#dfd8b17195c82152cfa45c734dad797e1be00e93"
+  integrity sha512-d/xo8Zf+LyusnUNfpWM++FP/A0rVnDl6SUMTj6wVMWnuIhx1a4lgC8524hUxPFMGsRNOpAlsgsRb+x7YNgFuQA==
+  dependencies:
+    "@alfalab/hooks" "^1.13.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-link@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-link/-/core-components-link-6.1.0.tgz#1856e6ab3c9c55ee8314b5c007b13a19326815de"
+  integrity sha512-pM9pzRdJPL/iJQff1Wufox8g8kovYZWjJvqHVlj9jjH8eX1uWvcngsnYnCGuHmmgOUUNxAGwVFRQj1lDltMagg==
+  dependencies:
+    "@alfalab/hooks" "^1.13.1"
+    classnames "^2.5.1"
+    react-merge-refs "^1.1.0"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-list-header@^4.0.3":
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-list-header/-/core-components-list-header-4.0.3.tgz#00c8001b2763c0d182cf5828ffe25e09011b4bf9"
+  integrity sha512-NKnXR+2ovUfxvE58x5bcFTnJce/9y2u8nkkXtbV/OWqtmesFj94qCBlYbsP57sn4/x/t0uXn/UF4jWe0cW7Bsw==
+  dependencies:
+    "@alfalab/core-components-typography" "^5.0.3"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-list@^4.0.3":
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-list/-/core-components-list-4.0.3.tgz#0b1fdd26fe81a51b6f7453e4d50c8a6a419d1929"
+  integrity sha512-p8MA+nAg1iEgt1VXaYX7FeBiwaNND7FRG7755VGSzYPu/0iZCVH0TXX/qJXvaedMNxJWuLEeevV1rUj1wiV0uw==
+  dependencies:
+    "@alfalab/core-components-typography" "^5.0.3"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-loader@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-loader/-/core-components-loader-4.0.0.tgz#f3a797a4cd757673beccd2d92d46afedd96e13ae"
+  integrity sha512-icPeQJPpVvvjBOTvfnW1jt51adQdqeyQ9O083ZftZOtfJKyNTwk5MvdY11ozTVBQg7vYCchRB/WAnv+9K9yG/A==
+  dependencies:
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-markdown@^2.1.3":
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-markdown/-/core-components-markdown-2.1.3.tgz#e4db0fc9958d1f1649ece9109f5c852151bfdaa3"
+  integrity sha512-RWUPXPLCYG8Bt9ag5lqppyr8kybey5XQNGFxxb/aR7Om8npnYDX4XKC7RYeNbGCDQDQhZTcLMWlQtVQaDL1G4A==
+  dependencies:
+    "@alfalab/core-components-link" "^6.1.0"
+    "@alfalab/core-components-list" "^4.0.3"
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/core-components-typography" "^5.0.3"
+    classnames "^2.5.1"
+    mdast-util-gfm-strikethrough "^0.2.3"
+    micromark-extension-gfm-strikethrough "^0.6.5"
+    react-markdown "6.0.2"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-masked-input@^7.0.4":
+  version "7.0.4"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-masked-input/-/core-components-masked-input-7.0.4.tgz#01391f8e892a51b491df13dfc3255a28caa5519e"
+  integrity sha512-vSdNb9Zz5cCC/HHRlmDAV0nXJwtAG+2BeCQzHE9bUQQ+8RjI4IVXv8Cr+yOoi0Jr/o0TbXT6BOgDuzQRahp3Dw==
+  dependencies:
+    "@alfalab/core-components-input" "^16.0.4"
+    classnames "^2.5.1"
+    react-merge-refs "^1.1.0"
+    text-mask-core "^5.1.2"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-modal@^10.0.9":
+  version "10.0.9"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-modal/-/core-components-modal-10.0.9.tgz#a53e3db8ebdd600d3e9e9d115e9d6327e156ac2d"
+  integrity sha512-+8lFf9SUxNqrXLt6DEscNKvg0TkBtIAXkK9OutZ08tKXl1y1SocDlW9Y21CSKCs+OjUIUUue8O9/JJZC14rLJw==
+  dependencies:
+    "@alfalab/core-components-base-modal" "^6.1.0"
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/core-components-navigation-bar-private" "^1.1.5"
+    "@alfalab/core-components-shared" "^1.1.1"
+    classnames "^2.5.1"
+    react-merge-refs "^1.1.0"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-mq@^5.0.2":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-mq/-/core-components-mq-5.0.2.tgz#797aeb7d549c3ca3674cd9064cb8823b8691a7de"
+  integrity sha512-0Me/q1ViqbwC5zmZ3rqaNvE6zTar1bsYj1hM8QxS8wKXqDcMxYYkkpTr1y86wjHTOvGkd6jJMkPOHZulxTr/cw==
+  dependencies:
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/hooks" "^1.13.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-navigation-bar-private@^1.1.5":
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-navigation-bar-private/-/core-components-navigation-bar-private-1.1.5.tgz#1694d02c97f21d451a824a2c025f5a45ddc7efbc"
+  integrity sha512-bXvKzPw8eUlMgEfFZMjFVueATNkvvWeu7XkfYw9cfsxVonSD2yrkUUeDh0gjs/OxR2DRMa4vdKTkFn0LnyL9+A==
+  dependencies:
+    "@alfalab/core-components-button" "^12.1.0"
+    "@alfalab/core-components-icon-button" "^7.0.4"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/core-components-typography" "^5.0.3"
+    "@alfalab/hooks" "^1.13.1"
+    "@alfalab/icons-glyph" "^2.247.0"
+    classnames "^2.5.1"
+    react-merge-refs "^1.1.0"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-navigation-bar@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-navigation-bar/-/core-components-navigation-bar-2.0.4.tgz#d69847ce9bc6a5e4d636a68beb84248bb3039059"
+  integrity sha512-PKYeNaKNXOBra4XE4j5dATU67bHM8O0lBRr1dceX1t98GOAGXlBmUHym8O46e+mfws9YYk+0LKYTObY67gnkZQ==
+  dependencies:
+    "@alfalab/core-components-button" "^12.1.0"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/core-components-typography" "^5.0.3"
+    "@alfalab/icons-glyph" "^2.247.0"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-notification-manager@^6.0.4":
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-notification-manager/-/core-components-notification-manager-6.0.4.tgz#7e478987428eb221abdd5a7de2614df2d488c2e8"
+  integrity sha512-JE/xDBbB8iJeYq8Rc0gYSjIYb0oabAggPRRcPIXamORra6hs1AyomkcNHIMyYiAVQ1hxMJTW5p5at3j4LGdx6Q==
+  dependencies:
+    "@alfalab/core-components-notification" "^8.0.4"
+    "@alfalab/core-components-portal" "^4.0.2"
+    "@alfalab/core-components-stack" "^6.0.0"
+    classnames "^2.5.1"
+    react-transition-group "^4.4.5"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-notification@^8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-notification/-/core-components-notification-8.0.4.tgz#e1870043426b348c3b29686c3b73988db91dc304"
+  integrity sha512-tZbMWbK6kcgOEHgqsjMor3pCuks2LRhWT5pEAGovV3VOg4E+ne1wUDGD+99OcLuuMbcBOWV7cIWw9eMvlqZYbQ==
+  dependencies:
+    "@alfalab/core-components-portal" "^4.0.2"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/core-components-stack" "^6.0.0"
+    "@alfalab/core-components-toast-plate" "^8.0.4"
+    classnames "^2.5.1"
+    element-closest "^3.0.2"
+    react-merge-refs "^1.1.0"
+    react-swipeable "^7.0.0"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-number-input@^3.0.5":
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-number-input/-/core-components-number-input-3.0.5.tgz#543d958ec3a8f34aaa879d440277910df0882638"
+  integrity sha512-WzCtq9UfKsi5Ytztuny+21CC7I4m7h5PQmKHxSU9Fo7CW8l8x6w3vM6QNZD7xjcQ+jDLzTBzVEv/gOgWBTj/JA==
+  dependencies:
+    "@alfalab/core-components-icon-button" "^7.0.4"
+    "@alfalab/core-components-input" "^16.0.4"
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/icons-glyph" "^2.247.0"
+    "@maskito/core" "^1.7.0"
+    "@maskito/react" "^1.7.0"
+    classnames "^2.5.1"
+    react-merge-refs "^1.1.0"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-page-indicator@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-page-indicator/-/core-components-page-indicator-2.0.2.tgz#af476aad96960bdd76e6f1ad39121a89f997ace2"
+  integrity sha512-oqnTC6UacTI/91GKzsB5/KI6lti505JFttxnRp5emK96Oh2Ren6gsqoQikl+QQnVSZO2uF99ZJ85Mfqe4LK4+g==
+  dependencies:
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@types/react-transition-group" "^4.4.5"
+    classnames "^2.5.1"
+    react-transition-group "^4.4.5"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-pagination@^3.0.4":
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-pagination/-/core-components-pagination-3.0.4.tgz#a414c74a68684b50a9c6c53d50f31abd7bca05d5"
+  integrity sha512-lqHpzpdrpqQSP11UZe1kPXGk5DSlbPoUN9Zuoq4+jeX/9q/7vfaktFNmtYw2oyO7amEq2A8iEwP3f6WZ5H5W5Q==
+  dependencies:
+    "@alfalab/core-components-tag" "^9.0.4"
+    "@alfalab/icons-glyph" "^2.247.0"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-pass-code-v1@^2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-pass-code-v1/-/core-components-pass-code-v1-2.0.3.tgz#00c4353556141b42c796c9dec84a3fb67fccc55a"
+  integrity sha512-Wr0ZYmyS/bHIJZ88QIysDn9D56aVW4Dq8jbj2TKNZPpVPkmsWeZnsteOYfPxADAtPNYxLqRC3UW2CY3SomqwEA==
+  dependencies:
+    "@alfalab/core-components-button" "^12.1.0"
+    "@alfalab/core-components-gap" "^2.0.0"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/icons-glyph" "^2.247.0"
+    classnames "^2.5.1"
+    react-transition-group "^4.4.5"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-pass-code@^3.0.3":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-pass-code/-/core-components-pass-code-3.0.3.tgz#586d969d635eb9771b36c9c49da91c8740fcdedd"
+  integrity sha512-Ye+XsCq2JpG4HIkG3E4/uLDQ/O6vLqCoOTZzgFuLxm1EoQ60UUUAfkkT02TLiKOPDUyVtk0Zi4+La4Nx2ppX0Q==
+  dependencies:
+    "@alfalab/core-components-button" "^12.1.0"
+    "@alfalab/core-components-gap" "^2.0.0"
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/icons-glyph" "^2.247.0"
+    classnames "^2.5.1"
+    react-transition-group "^4.4.5"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-password-input@^6.0.5":
+  version "6.0.5"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-password-input/-/core-components-password-input-6.0.5.tgz#43597ac8f7d9774d718f6957b22fab152e9627fd"
+  integrity sha512-NQXdWaIutt7bn8r+rvMPKu7ULa6JaJObuZZbLn4QX+802Pag2Z5gJuWzn0gSSXWWSrJBLOB7AddiTheSQpeLvQ==
+  dependencies:
+    "@alfalab/core-components-icon-button" "^7.0.4"
+    "@alfalab/core-components-input" "^16.0.4"
+    "@alfalab/icons-glyph" "^2.247.0"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-pattern-lock-v1@^2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-pattern-lock-v1/-/core-components-pattern-lock-v1-2.0.3.tgz#42ad81a71a317a888e606424c8003253b72ce39b"
+  integrity sha512-ZERqh/f31WdamT/YBRfFFGjO7X/5loMdx4QDD4CCjPaORVmkC1B0nyiKXMhnNytHAwlwc/EOGK40tx/zyPy3Ig==
+  dependencies:
+    "@alfalab/core-components-button" "^12.1.0"
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/core-components-shared" "^1.1.1"
+    classnames "^2.5.1"
+    react-canvas-pattern-lock "^2.0.6"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-pattern-lock@^3.0.3":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-pattern-lock/-/core-components-pattern-lock-3.0.3.tgz#096f2ecc8b5049da317329ca035387247bb2e475"
+  integrity sha512-xP1tHD3PS0y1ivE+vcucfoKoPomasruw1wd925Pg58p59AkBz/h2qBMbEYQmqsFReE97gYWlXEfPlLp+sDu/Fg==
+  dependencies:
+    "@alfalab/core-components-button" "^12.1.0"
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/react-canvas-pattern-lock" "^2.0.7"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-phone-input@^8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-phone-input/-/core-components-phone-input-8.0.4.tgz#bc24ecb183d06c8fd4114340b8e5cce39ca19584"
+  integrity sha512-xGwAl6gBld1S8LjbwISfcSjpqCH/DQF2ziGi9+piUn6IiCgrSL9dS6dH8OK/9jXgkSj7Gby8UQIpZBjXhW2gYg==
+  dependencies:
+    "@alfalab/core-components-masked-input" "^7.0.4"
+    react-merge-refs "^1.1.0"
+    text-mask-core "^5.1.2"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-picker-button@^12.1.0":
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-picker-button/-/core-components-picker-button-12.1.0.tgz#02f3efd1f68f7d995c50ba53c3bddda39c4bc0e1"
+  integrity sha512-rz5j01B2IT7tNeU2BeCuea5xbihkIIj5Cyp5UkCKjVfdA3Ir/5dDxme0ljEJ8zT2ZYT/3dJhJEZSmKXHPupRwg==
+  dependencies:
+    "@alfalab/core-components-button" "^12.1.0"
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/core-components-popover" "^7.1.1"
+    "@alfalab/core-components-select" "^18.2.8"
+    "@alfalab/icons-glyph" "^2.247.0"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-plate@^8.2.0":
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-plate/-/core-components-plate-8.2.0.tgz#192761a775464c42d2f10429afc8141c47c0d297"
+  integrity sha512-UBHHlvobq8yPr0JydC2kvq2pB6gwcP5RCu4juJGHXiQqPgi79e97NBL6yolh4/6JhUHQ8gxExpI7i2T21Q7g4w==
+  dependencies:
+    "@alfalab/core-components-button" "^12.1.0"
+    "@alfalab/core-components-icon-button" "^7.0.4"
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/hooks" "^1.13.1"
+    "@alfalab/icons-glyph" "^2.247.0"
+    classnames "^2.5.1"
+    react-merge-refs "^1.1.0"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-popover@^7.1.1":
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-popover/-/core-components-popover-7.1.1.tgz#8ba3bc4583fcb88f57cf922d9ab646b9a4edd92e"
+  integrity sha512-JkxyDsA6vzfBg5fRYCBl2GenKCmtgBigAdg9B1Yl5sBo5cL0AU5Qy77gqpWFLb9vsj64K31MXwLqLDEk1dNJfA==
+  dependencies:
+    "@alfalab/core-components-portal" "^4.0.2"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/core-components-stack" "^6.0.0"
+    "@alfalab/hooks" "^1.13.1"
+    "@juggle/resize-observer" "^3.3.1"
+    "@popperjs/core" "^2.11.8"
+    "@types/react-transition-group" "^4.4.5"
+    classnames "^2.5.1"
+    popper-max-size-modifier "^0.2.0"
+    react-merge-refs "^1.1.0"
+    react-popper "^2.3.0"
+    react-transition-group "^4.4.5"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-popup-sheet@^2.0.11":
+  version "2.0.11"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-popup-sheet/-/core-components-popup-sheet-2.0.11.tgz#a51194a3274830bb366ca89b89dc94bb5e23388f"
+  integrity sha512-yVWK5HdKy7CLUvSvDY4hylD3fpee1sdOyH3WiR7p5H7o6E6vGdJbQsYvP3P4accDkATLTnV8RF9wBV0T6m1WlA==
+  dependencies:
+    "@alfalab/core-components-backdrop" "^4.0.0"
+    "@alfalab/core-components-base-modal" "^6.1.0"
+    "@alfalab/core-components-navigation-bar-private" "^1.1.5"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/core-components-types" "^1.0.0"
+    classnames "^2.5.1"
+    react-merge-refs "^1.1.0"
+    react-swipeable "^7.0.0"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-portal@^4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-portal/-/core-components-portal-4.0.2.tgz#f3d2afcddef2e2c24d1dd39847d32b5d47ef3988"
+  integrity sha512-3XRtNigohbxzhGNKPvspR2Z1F4kW8X5WqJd6dnS6MaMvNQ76qctrVivzVdQ2XQfUcSwpKaNGg8sThI6X+JFwnA==
+  dependencies:
+    "@alfalab/core-components-shared" "^1.1.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-product-cover@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-product-cover/-/core-components-product-cover-2.0.4.tgz#fead24ca2af2388cf12c2a42ddc3a53b8ce946c3"
+  integrity sha512-NHjarp3MxtxKMnzl9GgPbvd2MPOvE99fcI8PAZG7M56gOeG57GKGr3yicnfcp5b81JkOkXNmXevYdkfXuZNgpg==
+  dependencies:
+    "@alfalab/core-components-button" "^12.1.0"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/core-components-typography" "^5.0.3"
+    "@alfalab/hooks" "^1.13.1"
+    "@alfalab/icons-glyph" "^2.247.0"
+    "@alfalab/utils" "^1.18.0"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-progress-bar@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-progress-bar/-/core-components-progress-bar-4.0.0.tgz#762602d7b9ee1c2e88a61b56bbaa1c5a10df06d7"
+  integrity sha512-57uULg8/9BTplEM/oySjlnrJlt4TH8EHl+1r88+ZYLZSoyaZ0VCg6dFh8YpRZ9APPneGSzb/LyC+eWqrJy4e/A==
+  dependencies:
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-pure-cell@^5.0.4":
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-pure-cell/-/core-components-pure-cell-5.0.4.tgz#573405e78608d5bcc5300e8dbc52ad4b2871938f"
+  integrity sha512-Dpgr/B/yGPB0x+5ArX1BErF/fLesCxKWVI3GHQings+QRy61Gd0W/lsK6PrJLI2TlCede0pbIcfahCcA20NNNA==
+  dependencies:
+    "@alfalab/core-components-amount" "^4.0.0"
+    "@alfalab/core-components-button" "^12.1.0"
+    "@alfalab/core-components-comment" "^3.0.3"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/core-components-typography" "^5.0.3"
+    "@alfalab/data" "^1.9.2"
+    "@alfalab/hooks" "^1.13.1"
+    classnames "^2.5.1"
+    react-merge-refs "^1.1.0"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-radio-group@^5.2.1":
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-radio-group/-/core-components-radio-group-5.2.1.tgz#090e422375d3eb8aabbfed5da5b3c87e3bf07c7b"
+  integrity sha512-eR/YZ+qLeHvGUkxh2EcLQ+5EEpByonw9CbAM8WJGYiAcnSDvsYjNfo7hU6Sqll3fnrOrEC6/Uq4V2hRiBageGw==
+  dependencies:
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/hooks" "^1.13.1"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-radio@^5.0.2":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-radio/-/core-components-radio-5.0.2.tgz#4e01130b3cd29bcfcaed0c99f2913a675b272635"
+  integrity sha512-by0DL0EAN5tA4+dRDKGIoHzKLWTIBf7aJC5M8E9ApfnnvbiY0/7bbVLZ2RCidy14ubRj/2E53PAaOGnBlIjTrw==
+  dependencies:
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/hooks" "^1.13.1"
+    classnames "^2.5.1"
+    react-merge-refs "^1.1.0"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-scrollbar@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-scrollbar/-/core-components-scrollbar-4.0.0.tgz#483f72d5de745cc09199b22ee3e7f5fa63773f74"
+  integrity sha512-S+/Z7B/lJBU+47vpyYQ91vhYvowqf5T7PcRCTvNjuWzwzv1IPtPmw2RsN2iDdDiCxpUO/rJHQHUqZ/4RRciBFA==
+  dependencies:
+    "@juggle/resize-observer" "^3.3.1"
+    can-use-dom "^0.1.0"
+    classnames "^2.5.1"
     lodash.debounce "^4.0.8"
     lodash.memoize "^4.1.2"
     lodash.throttle "^4.1.1"
-    mdast-util-gfm-strikethrough "^0.2.3"
-    micromark-extension-gfm-strikethrough "^0.6.5"
-    nouislider "^15.6.0"
-    popper-max-size-modifier "^0.2.0"
-    react-canvas-pattern-lock "^2.0.6"
-    react-div-100vh "^0.7.0"
-    react-focus-lock "^2.12.1"
-    react-markdown "6.0.2"
     react-merge-refs "^1.1.0"
-    react-popper "^2.3.0"
-    react-swipeable "^7.0.0"
-    react-textarea-autosize "^8.3.4"
-    react-transition-group "^4.4.5"
-    react-virtual "^2.3.2"
-    react-virtuoso "^2.12.0"
-    recharts "^2.1.2"
     simplebar "^5.3.8"
-    swiper "^6.8.2"
-    text-mask-core "^5.1.2"
     tslib "^2.4.0"
-    ui-primitives "^22.7.0"
 
-"@alfalab/core-config@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@alfalab/core-config/-/core-config-1.0.0.tgz#e20d7d2ad36e58b1b65a071eebeed1776ae3cf57"
-  integrity sha512-9msIAhOYlZ7Ydpf490P1694Oc60UmsodJpDeAvhQ84XzWzGc1rRH6+FWXWtzoS1tOlNlybyhR2y7Gq6Ontth3w==
-
-"@alfalab/data@^1.8.0":
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/@alfalab/data/-/data-1.8.0.tgz#2f991e196946336541de5a7d64eabf7caf02b58c"
-  integrity sha512-hyYAw8tbx099ibX9r9T3YiOkxI+s7p/Hi7WOQC6cF+Uy5KX/0usghFyt/gUjj+7acf6G+zx1VwAtcI9tSUle9w==
-
-"@alfalab/hooks@^1.13.0":
-  version "1.13.0"
-  resolved "https://registry.yarnpkg.com/@alfalab/hooks/-/hooks-1.13.0.tgz#13c8cf5a326fb85469e6472f469e91d7454a530f"
-  integrity sha512-kAArulLn2plNLZwJIA20KByJq6b/410v7AZp7+X7MMY63oUKKByKhUijIAaFDidKkjV6PBY/aCFzL2fpNLenlQ==
+"@alfalab/core-components-segmented-control@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-segmented-control/-/core-components-segmented-control-2.0.0.tgz#de5d8e9893d9d422286c07061c1794925c6dfc28"
+  integrity sha512-Kt1tkx8oP3686B5p6zJi76SjTzSc6fhNAZCE+oIz9YGRtWkmXAoXLoYytJCEEeUWn5QsjafHEM1iZyxVNu8eTA==
   dependencies:
-    "@alfalab/utils" "^1.13.2"
+    "@alfalab/hooks" "^1.13.1"
+    "@juggle/resize-observer" "^3.3.1"
+    classnames "^2.5.1"
+    react-merge-refs "^1.1.0"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-select-with-tags@^9.0.11":
+  version "9.0.11"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-select-with-tags/-/core-components-select-with-tags-9.0.11.tgz#9cc5aec4779b4d1a9dfc5de08aba31e47175b518"
+  integrity sha512-r0G6naijxvMXtnKkjJlCrj9WTI9kZZUwHkX9BdZkijU6XqA9+MQpPqIJCiZLIyPokwvQHR+B11GdioP3CfvmIw==
+  dependencies:
+    "@alfalab/core-components-bottom-sheet" "^7.4.2"
+    "@alfalab/core-components-form-control" "^13.0.2"
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/core-components-popover" "^7.1.1"
+    "@alfalab/core-components-select" "^18.2.8"
+    "@alfalab/core-components-tag" "^9.0.4"
+    "@alfalab/hooks" "^1.13.1"
+    "@alfalab/icons-glyph" "^2.247.0"
+    classnames "^2.5.1"
+    react-merge-refs "^1.1.0"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-select@^18.2.8":
+  version "18.2.8"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-select/-/core-components-select-18.2.8.tgz#4bf9fbc56e5c29da66c587cf2a094f6e8c839838"
+  integrity sha512-+Fih0TVg51mL0gSN+5ZHvan23YBT2o50EtBgeIMwNVqTqyz/uwM5FuG3qxA/Rcs/HZjER671E30//EoPRSRD7w==
+  dependencies:
+    "@alfalab/core-components-badge" "^6.0.0"
+    "@alfalab/core-components-base-modal" "^6.1.0"
+    "@alfalab/core-components-bottom-sheet" "^7.4.2"
+    "@alfalab/core-components-button" "^12.1.0"
+    "@alfalab/core-components-checkbox" "^5.0.2"
+    "@alfalab/core-components-form-control" "^13.0.2"
+    "@alfalab/core-components-input" "^16.0.4"
+    "@alfalab/core-components-modal" "^10.0.9"
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/core-components-popover" "^7.1.1"
+    "@alfalab/core-components-scrollbar" "^4.0.0"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/core-components-skeleton" "^6.0.1"
+    "@alfalab/hooks" "^1.13.1"
+    "@alfalab/icons-glyph" "^2.247.0"
+    "@juggle/resize-observer" "^3.3.1"
+    classnames "^2.5.1"
+    compute-scroll-into-view "^3.1.0"
+    downshift "8.4.0"
+    intersection-observer "^0.12.0"
+    react-fast-compare "^3.2.2"
+    react-merge-refs "^1.1.0"
+    react-virtual "^2.3.2"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-shared@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-shared/-/core-components-shared-1.1.1.tgz#42dc0024f2fd001b431dfaa5711c4e9aa125bbb2"
+  integrity sha512-8d/y5yjKqjBmrHxzQl9ZmuLTAfaOKOBJbRNuHZo4hF8N0N3MSGid0LmTy0n6WRP4yf7WnebsskaommlTcgdk/A==
+  dependencies:
+    "@alfalab/core-components-types" "^1.0.0"
+    "@alfalab/hooks" "^1.13.1"
+    "@maskito/core" "^1.7.0"
+    detect-browser "^5.3.0"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-side-panel@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-side-panel/-/core-components-side-panel-6.1.0.tgz#2d3a17cb01921039b2aaa15d7beb8112336fe3b6"
+  integrity sha512-DK79OOx1n4s72k14xVYCht5liNN8YIffRSUvMa8POJAUe2/7mdrLym87xxOSc1+ra0HtO6LWzc+ZjtIAa/RusQ==
+  dependencies:
+    "@alfalab/core-components-base-modal" "^6.1.0"
+    "@alfalab/core-components-drawer" "^6.0.3"
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/core-components-navigation-bar-private" "^1.1.5"
+    "@alfalab/core-components-shared" "^1.1.1"
+    classnames "^2.5.1"
+    react-merge-refs "^1.1.0"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-skeleton@^6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-skeleton/-/core-components-skeleton-6.0.1.tgz#12de1bb8560e3c432d5eca790d9996acd0f2d447"
+  integrity sha512-Lkuz6Y9Pog09nf4pxVBNsSYrGfHIBejv5kwGQa35QUWsc7BgKog8QgsEuM5Xd/Xz31ZIgQj/kYLwC7LZdeEdZg==
+  dependencies:
+    "@alfalab/hooks" "^1.13.1"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-slider-input@^10.1.2":
+  version "10.1.2"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-slider-input/-/core-components-slider-input-10.1.2.tgz#ac7d3f78ada911f548a6a89585f2241990d76c1e"
+  integrity sha512-5V/+wlNwaksIIJECpn59Ut8hLg9T04tCsr12Ze/wgJ/YHgxW67ktFEoOZX5fp83DU4lJqb3FBf4j/lWI0tu32w==
+  dependencies:
+    "@alfalab/core-components-input" "^16.0.4"
+    "@alfalab/core-components-slider" "^5.0.0"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-slider@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-slider/-/core-components-slider-5.0.0.tgz#1bc94e118931d80da614a1054c9ed15fdde75301"
+  integrity sha512-b/w7TBwzyc6ppV+OdKTkLruND3kCYf7K7tC62QjYaNWeBoj1/QfVm7I/o0IllP4C9ym96VMfzmB2rEe6WcK3vA==
+  dependencies:
+    classnames "^2.5.1"
+    nouislider "^15.6.0"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-sortable-list@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-sortable-list/-/core-components-sortable-list-2.0.2.tgz#0cef358081d3c88bb8219448d540669f782e2197"
+  integrity sha512-0CPlFLrQDHRQ3fXjDNd0uCMjIkNW6j74GrxkFevCE928VhL9JGqRQUMlKWEcP86bJ7JBvqZZAzBAHcH1evH6gg==
+  dependencies:
+    "@alfalab/core-components-portal" "^4.0.2"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/icons-glyph" "^2.247.0"
+    "@dnd-kit/core" "^6.0.7"
+    "@dnd-kit/sortable" "^7.0.2"
+    "@dnd-kit/utilities" "^3.2.1"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-space@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-space/-/core-components-space-4.1.0.tgz#54af48e4dc84ad0e487757592ac4d168e13ff8f2"
+  integrity sha512-hsggKrhSUtn1gdrDpe8i3CGsIqr7TqG2wRKmCKYjz7kmzETWVLZ41oM0hUxAyMfz766K3OByxKKNxIAfctAOsw==
+  dependencies:
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-spinner@^5.0.2":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-spinner/-/core-components-spinner-5.0.2.tgz#cdfa24b04ae768b63114078da994ec6f07f21017"
+  integrity sha512-SOkQn+Ap2fp+CxY/VQyRbybAFqWRZbALnNbk31Wl56yRpgFUMupnEL0flBQf7sjEMs6JwdppkMAfe7f1aaETGQ==
+  dependencies:
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/hooks" "^1.13.1"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-stack-context@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-stack-context/-/core-components-stack-context-1.0.0.tgz#69f8c9cc1ff21ae292a2a283a1f68fc251d56ac2"
+  integrity sha512-jdT5IWkbjNwOoRdsLRyuOckR+0blFKe3e0atxN8P9lr+DB4Z2QQE77e/CNA+yTWbQXw013TurRk3cU/z2dZlwA==
+  dependencies:
+    tslib "^2.4.0"
+
+"@alfalab/core-components-stack@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-stack/-/core-components-stack-6.0.0.tgz#21f455053a5dd86abe2deb0f1c39b97cb6bb0adf"
+  integrity sha512-DmFyxaDWHQJyH3hnybhwbrw2Bo31DSIRjsARsU4HpDUmOkPCYUTmYk1TbXZyZyoul+ziX4c98ACtQDwdU48/Tw==
+  dependencies:
+    tslib "^2.4.0"
+
+"@alfalab/core-components-status-badge@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-status-badge/-/core-components-status-badge-2.0.1.tgz#c2b46fa8d911e53846f9e7e6c7b1c40d2baec04e"
+  integrity sha512-oItt7dal5xBLoBVdC4JzUVPUFjnKdQ4Uxv7iqVi8aV8DSD2ngIaLQfoXP4w+r3IOo2t6RHUDmwqGZYSicLUWcA==
+  dependencies:
+    "@alfalab/icons-glyph" "^2.247.0"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-status@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-status/-/core-components-status-4.1.0.tgz#0760f3a17425978e0487152bc59e0e3c0bda118f"
+  integrity sha512-SC74BZ88jL5Hk+eggZsw+GndjBAdAtEXp76O+bI4WMWq7aL9ZPk5bTXz1FxJtz0KYn0LnggrtwILuv6xJzhWOA==
+  dependencies:
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-stepped-progress-bar@^3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-stepped-progress-bar/-/core-components-stepped-progress-bar-3.1.1.tgz#2ef3ec6fad6a15bcbbc718b47246c7c85868596f"
+  integrity sha512-aqi6DMf/PLCG5/QU30uyyol/jRdjAbIgVtV36hA4/5OsBczUNWo9hbdZdsHZSTbyiTkEV0BrCYYn5ajG9c79jA==
+  dependencies:
+    "@alfalab/core-components-typography" "^5.0.3"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-steps@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-steps/-/core-components-steps-2.0.2.tgz#38712fd5caea48d16804103d016c8c160d72dc75"
+  integrity sha512-S+5owahQPKY5QudZ/WULBS2elk9Qn+0eDyY9bAQ6pKDhhLasc6Xj6tFhbT4PCPy7I/2Peew5Wq/trNNDbHOuLw==
+  dependencies:
+    "@alfalab/core-components-badge" "^6.0.0"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/hooks" "^1.13.1"
+    "@alfalab/icons-glyph" "^2.247.0"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-switch@^5.0.2":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-switch/-/core-components-switch-5.0.2.tgz#d8b94b85d03fa20c300a1d9e9679794e421b20d7"
+  integrity sha512-d3vuagLKAR9DoiOmJrNgy1ElvlcJLg4yeOJ6EouSAvFA/8inZ9JINLANMJneUhsTKpj6bBWZJ3NiwfK5TCn23Q==
+  dependencies:
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/hooks" "^1.13.1"
+    classnames "^2.5.1"
+    react-merge-refs "^1.1.0"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-system-message@^3.0.3":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-system-message/-/core-components-system-message-3.0.3.tgz#b82fd89e165c8f1a474c7c3bf010697df9cef5e1"
+  integrity sha512-CgMzSwR2ZyiFtmhl4xaY1q+K8bAd3M0+Nl41vhndHmxtwC0aGGtd7DxZPEOptDhUDPbvAedqbrvZEGr36Fmbdw==
+  dependencies:
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/core-components-types" "^1.0.0"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-tab-bar@^3.0.3":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-tab-bar/-/core-components-tab-bar-3.0.3.tgz#00aa7cd98e6d4d7a2aff3da18a015447eccf60c6"
+  integrity sha512-M8+gPPKP/aC3wOzskm/BJAxCFLY1TVXDIuUzulVMwj59ZzU629NFbUW+Ryk/+bZmwBXoauVvSC0gMD2wN2z2lw==
+  dependencies:
+    "@alfalab/core-components-indicator" "^3.0.0"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/core-components-typography" "^5.0.3"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-table@^3.0.11":
+  version "3.0.11"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-table/-/core-components-table-3.0.11.tgz#e093b10632fbd76576370a8a7503fdb48b880937"
+  integrity sha512-dU7MkYhKmjy1U5otSg+UuvWaDeVeKYOvCNycU4pcFvjNjUjUD4WbEl2FtrGL+dZZYJMvKnxOn8RcyStFzxACvQ==
+  dependencies:
+    "@alfalab/core-components-button" "^12.1.0"
+    "@alfalab/core-components-pagination" "^3.0.4"
+    "@alfalab/core-components-select" "^18.2.8"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-tabs@^9.2.8":
+  version "9.2.8"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-tabs/-/core-components-tabs-9.2.8.tgz#d09dc2c9035938a02b211a5e220a3de0265155d4"
+  integrity sha512-sOl8qVsWH+7NdQR2RMqlGkuWpVBpXDUIdO640A2OerAIGxUSeZ1xwPzEs0OsVh3s4OiOE7sAaT7MFfAFo8ElMg==
+  dependencies:
+    "@alfalab/core-components-badge" "^6.0.0"
+    "@alfalab/core-components-icon-button" "^7.0.4"
+    "@alfalab/core-components-keyboard-focusable" "^5.0.0"
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/core-components-picker-button" "^12.1.0"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/core-components-skeleton" "^6.0.1"
+    "@alfalab/core-components-tag" "^9.0.4"
+    "@alfalab/hooks" "^1.13.1"
+    "@alfalab/icons-glyph" "^2.247.0"
+    "@juggle/resize-observer" "^3.3.1"
+    classnames "^2.5.1"
+    compute-scroll-into-view "^3.1.0"
+    lodash "^4.17.21"
+    react-merge-refs "^1.1.0"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-tag@^9.0.4":
+  version "9.0.4"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-tag/-/core-components-tag-9.0.4.tgz#003830f16237480ed610f3c45c386eb26f5ae10b"
+  integrity sha512-10XjBrixvslLkw/UezbVRZCJ10qBy0CXW3Z5Cp1whFnLUu412w1PotOSg9hOr+bQ1JS/ObTtZrc6Pi6VBtfoDA==
+  dependencies:
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/hooks" "^1.13.1"
+    classnames "^2.5.1"
+    react-merge-refs "^1.1.0"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-text@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-text/-/core-components-text-2.0.0.tgz#3a709c73fd7255ccd7f93df6f566f2e413d50651"
+  integrity sha512-bTRt7ojcQCve6NEbRnMTQ85Lt/KFUsM7U0VjYZV9sFo7OqEo1kWazS8sPpYdH3ViKXFj1NzPOBaKtJzikcxbQQ==
+  dependencies:
+    "@alfalab/core-components-types" "^1.0.0"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-textarea@^9.0.3":
+  version "9.0.3"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-textarea/-/core-components-textarea-9.0.3.tgz#f2fc14eb2871a2329758e0adeac05666f4c6df3d"
+  integrity sha512-7aG36F/H/kJs4rV2Iulv0I+tO6b8QlmhUprDnOkIKx/lbuTSTVor7AAkgFWA6fyBHzNIbNcHDFPZXE2LrZYzqg==
+  dependencies:
+    "@alfalab/core-components-form-control" "^13.0.2"
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/hooks" "^1.13.1"
+    classnames "^2.5.1"
+    react-merge-refs "^1.1.0"
+    react-textarea-autosize "^8.3.4"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-themes@^14.2.0":
+  version "14.2.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-themes/-/core-components-themes-14.2.0.tgz#235076204eceecef3b2d3c2708262ffd5ddf2a5e"
+  integrity sha512-H9Ksqxm3HXjekzKEmh/hd3/NPSNpQnWy36i+6vzTbvhLLwGsZinJJCMt5j9lypP1w0g6ivG2GlWisH7kbMCRbg==
+
+"@alfalab/core-components-time-input@^3.0.4":
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-time-input/-/core-components-time-input-3.0.4.tgz#45be2b6e60b74e5ad452d0addcd01322449baa54"
+  integrity sha512-Tz5MgIZlIP0DjtT9ZqX0Jf80VchTZS3PtdSwcPuesIenbn14QZmZ+hyrnHwQG2SJ70It8T3VLpV4nt2UxFwVzg==
+  dependencies:
+    "@alfalab/core-components-input" "^16.0.4"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-toast-plate@^8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-toast-plate/-/core-components-toast-plate-8.0.4.tgz#b6cde4da15e64044fc6d4aeed309359a3da65c51"
+  integrity sha512-/8QcujZ9sFQ0NYNJENQk9pqB5bdROCUSj+++Kfz3hWsQfiRYNWvKUbwyBcBe/Tp7yRC/Bjx4Ij01pqSYUJlvAw==
+  dependencies:
+    "@alfalab/core-components-icon-button" "^7.0.4"
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/core-components-status-badge" "^2.0.1"
+    "@alfalab/icons-glyph" "^2.247.0"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-toast@^7.0.4":
+  version "7.0.4"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-toast/-/core-components-toast-7.0.4.tgz#f208901cd12cd2e597a2267cec5eb3319291577c"
+  integrity sha512-E7uNygoAmBC2L3LbkQ5Zt6NOXOcA0SizeW9mnJN8iPRvIoIUBFNdJKZn7CjCisOjOpUnslnwOFi2zxfkHDvDEQ==
+  dependencies:
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/core-components-popover" "^7.1.1"
+    "@alfalab/core-components-portal" "^4.0.2"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/core-components-stack" "^6.0.0"
+    "@alfalab/core-components-toast-plate" "^8.0.4"
+    "@alfalab/hooks" "^1.13.1"
+    classnames "^2.5.1"
+    react-merge-refs "^1.1.0"
+    react-transition-group "^4.4.5"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-tooltip@^8.0.11":
+  version "8.0.11"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-tooltip/-/core-components-tooltip-8.0.11.tgz#731cfcedeee4f42501ff91eb2387b92e0d8eb1a4"
+  integrity sha512-ldFvskbDxek2NqwTkOpmCGNheo48BAnlFfQmKlpJKKIYyt87YDDJlw4JBE+qYXPVgRQu42i6cdJ5AfDfUJkVlA==
+  dependencies:
+    "@alfalab/core-components-bottom-sheet" "^7.4.2"
+    "@alfalab/core-components-button" "^12.1.0"
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/core-components-popover" "^7.1.1"
+    classnames "^2.5.1"
+    react-merge-refs "^1.1.0"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-types@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-types/-/core-components-types-1.0.0.tgz#0c139adfde139cd5d54d4bb1615e8104fb19c4cd"
+  integrity sha512-/f8l7YKYa5p9BX/uOx3AmpZJ/zzMbgQlaHR2L0P1BJxeqZ8ROfFNV7jNPFdCg2vIt8wDqbUhqdyfHhWCB8Hliw==
+
+"@alfalab/core-components-typography@^5.0.3":
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-typography/-/core-components-typography-5.0.3.tgz#cc221fec879af804a196576f8793866f4fd751b5"
+  integrity sha512-gJWSuhhUpOsG07CdySRhzeq6M+GoBnYnLKre+Q3DGTGWel8yqR4HxN5/GwoSPjV7uEs9j81Gzmop1i2T0oRUug==
+  dependencies:
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/core-components-skeleton" "^6.0.1"
+    classnames "^2.5.1"
+    react-merge-refs "^1.1.0"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-underlay@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-underlay/-/core-components-underlay-2.0.0.tgz#f4ccb0b1e70f0d98b01eff4c9464472e222328a8"
+  integrity sha512-q3V8LsNPHe2DJqw635VDd33OIzQ0aFAyJvxdqeZ9ajlxjrH4qPoMsrA4l/pZyoIEk63CUsvIDZEYiQYbnpS7mQ==
+  dependencies:
+    "@alfalab/core-components-types" "^1.0.0"
+    classnames "^2.5.1"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-universal-date-input@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-universal-date-input/-/core-components-universal-date-input-3.1.0.tgz#b0e5413cc394cf617369be0a21befc758403cabc"
+  integrity sha512-1gLXT0YW4HDw+Opj0NRBxJctIr7/AXVuOBmTTKc3733avLUvBNtCUnAb5tEzYCiuHdL6FXBET8kvqXaikGT7TQ==
+  dependencies:
+    "@alfalab/core-components-calendar" "^8.0.9"
+    "@alfalab/core-components-input" "^16.0.4"
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/core-components-popover" "^7.1.1"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/icons-glyph" "^2.247.0"
+    "@maskito/core" "^1.7.0"
+    "@maskito/react" "^1.7.0"
+    classnames "^2.5.1"
+    date-fns "^2.16.1"
+    react-merge-refs "^1.1.0"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-universal-modal@^2.0.11":
+  version "2.0.11"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-universal-modal/-/core-components-universal-modal-2.0.11.tgz#8902fa9c277aa27d0004737f581d9fcd783ea646"
+  integrity sha512-t3e/l2BZ92OJU+78XqdKcA3HNK4F3DB1I3iS+OMJ4Q9FpF9W7FaBQ50+m5HNRG/QpgZXjMO7S+dRIOJPoCthaQ==
+  dependencies:
+    "@alfalab/core-components-backdrop" "^4.0.0"
+    "@alfalab/core-components-base-modal" "^6.1.0"
+    "@alfalab/core-components-button" "^12.1.0"
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/core-components-navigation-bar-private" "^1.1.5"
+    "@alfalab/core-components-scrollbar" "^4.0.0"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/core-components-typography" "^5.0.3"
+    "@alfalab/icons-glyph" "^2.247.0"
+    "@types/react-transition-group" "^4.4.5"
+    classnames "^2.5.1"
+    react-merge-refs "^1.1.0"
+    react-transition-group "^4.4.5"
+    tslib "^2.4.0"
+
+"@alfalab/core-components-vars@^10.2.0":
+  version "10.2.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-vars/-/core-components-vars-10.2.0.tgz#e4ac429058156feea5de58d17ffec9b6e73fb1ea"
+  integrity sha512-pflfZ1heRFy+esB/LUTACPy8LZn9HXh9MLTo0uWARzQIK3sRZesa07w6P9qeR+/MkQuOb6VgryiQGyrkTUv5fw==
+
+"@alfalab/core-components-with-suffix@^5.0.4":
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components-with-suffix/-/core-components-with-suffix-5.0.4.tgz#56e22f34fd77994dab5a4d66d98f66458d3e2865"
+  integrity sha512-5u54h4ia4tfS2s2WUAgv+DUcBASPtQitBYpilooR+5w82COMXUjBwG6RcO1Gj2G1uGaVVgR5OSr6hQ/6JjSa2A==
+  dependencies:
+    "@alfalab/core-components-input" "^16.0.4"
+    "@alfalab/core-components-portal" "^4.0.2"
+    classnames "^2.5.1"
+    react-merge-refs "^1.1.0"
+    tslib "^2.4.0"
+
+"@alfalab/core-components@^49.14.0":
+  version "49.14.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components/-/core-components-49.14.0.tgz#682d81484d99fafd60236441de4cbf938fcdb7e3"
+  integrity sha512-NZio+LxipbeTemP45zFzUMJVQ1kKTZzR3oV8Zc3Mw4pFRhyVr7Vc8cO1UyZFvnrjhW1TcbYJMfU7MdxHaCcAdg==
+  dependencies:
+    "@alfalab/core-components-accordion" "^2.0.3"
+    "@alfalab/core-components-action-button" "^2.0.2"
+    "@alfalab/core-components-alert" "^5.0.5"
+    "@alfalab/core-components-amount" "^4.0.0"
+    "@alfalab/core-components-amount-input" "^8.1.5"
+    "@alfalab/core-components-attach" "^7.1.0"
+    "@alfalab/core-components-backdrop" "^4.0.0"
+    "@alfalab/core-components-badge" "^6.0.0"
+    "@alfalab/core-components-bank-card" "^6.0.4"
+    "@alfalab/core-components-base-modal" "^6.1.0"
+    "@alfalab/core-components-bottom-sheet" "^7.4.2"
+    "@alfalab/core-components-button" "^12.1.0"
+    "@alfalab/core-components-calendar" "^8.0.9"
+    "@alfalab/core-components-calendar-input" "^11.0.10"
+    "@alfalab/core-components-calendar-range" "^8.0.10"
+    "@alfalab/core-components-calendar-with-skeleton" "^6.0.9"
+    "@alfalab/core-components-card-image" "^4.1.0"
+    "@alfalab/core-components-cdn-icon" "^6.0.2"
+    "@alfalab/core-components-chart" "^4.1.0"
+    "@alfalab/core-components-checkbox" "^5.0.2"
+    "@alfalab/core-components-checkbox-group" "^5.1.1"
+    "@alfalab/core-components-circular-progress-bar" "^4.0.3"
+    "@alfalab/core-components-code-input" "^4.1.1"
+    "@alfalab/core-components-collapse" "^5.1.0"
+    "@alfalab/core-components-comment" "^3.0.3"
+    "@alfalab/core-components-confirmation" "^14.3.1"
+    "@alfalab/core-components-confirmation-v1" "^2.0.4"
+    "@alfalab/core-components-custom-button" "^4.1.0"
+    "@alfalab/core-components-custom-picker-button" "^3.1.0"
+    "@alfalab/core-components-date-input" "^5.0.4"
+    "@alfalab/core-components-date-range-input" "^4.0.10"
+    "@alfalab/core-components-date-time-input" "^5.0.10"
+    "@alfalab/core-components-divider" "^4.0.0"
+    "@alfalab/core-components-drawer" "^6.0.3"
+    "@alfalab/core-components-dropzone" "^5.0.1"
+    "@alfalab/core-components-file-upload-item" "^7.3.0"
+    "@alfalab/core-components-file-upload-item-v1" "^2.0.5"
+    "@alfalab/core-components-filter-tag" "^6.0.3"
+    "@alfalab/core-components-form-control" "^13.0.2"
+    "@alfalab/core-components-gallery" "^6.0.12"
+    "@alfalab/core-components-gap" "^2.0.0"
+    "@alfalab/core-components-generic-wrapper" "^2.0.0"
+    "@alfalab/core-components-global-store" "^3.0.0"
+    "@alfalab/core-components-grid" "^4.0.0"
+    "@alfalab/core-components-hatching-progress-bar" "^3.0.0"
+    "@alfalab/core-components-icon-button" "^7.0.4"
+    "@alfalab/core-components-icon-view" "^4.0.1"
+    "@alfalab/core-components-indicator" "^3.0.0"
+    "@alfalab/core-components-input" "^16.0.4"
+    "@alfalab/core-components-input-autocomplete" "^13.1.0"
+    "@alfalab/core-components-international-phone-input" "^3.2.8"
+    "@alfalab/core-components-intl-phone-input" "^10.0.11"
+    "@alfalab/core-components-keyboard-focusable" "^5.0.0"
+    "@alfalab/core-components-link" "^6.1.0"
+    "@alfalab/core-components-list" "^4.0.3"
+    "@alfalab/core-components-list-header" "^4.0.3"
+    "@alfalab/core-components-loader" "^4.0.0"
+    "@alfalab/core-components-markdown" "^2.1.3"
+    "@alfalab/core-components-masked-input" "^7.0.4"
+    "@alfalab/core-components-modal" "^10.0.9"
+    "@alfalab/core-components-mq" "^5.0.2"
+    "@alfalab/core-components-navigation-bar" "^2.0.4"
+    "@alfalab/core-components-navigation-bar-private" "^1.1.5"
+    "@alfalab/core-components-notification" "^8.0.4"
+    "@alfalab/core-components-notification-manager" "^6.0.4"
+    "@alfalab/core-components-number-input" "^3.0.5"
+    "@alfalab/core-components-page-indicator" "^2.0.2"
+    "@alfalab/core-components-pagination" "^3.0.4"
+    "@alfalab/core-components-pass-code" "^3.0.3"
+    "@alfalab/core-components-pass-code-v1" "^2.0.3"
+    "@alfalab/core-components-password-input" "^6.0.5"
+    "@alfalab/core-components-pattern-lock" "^3.0.3"
+    "@alfalab/core-components-pattern-lock-v1" "^2.0.3"
+    "@alfalab/core-components-phone-input" "^8.0.4"
+    "@alfalab/core-components-picker-button" "^12.1.0"
+    "@alfalab/core-components-plate" "^8.2.0"
+    "@alfalab/core-components-popover" "^7.1.1"
+    "@alfalab/core-components-popup-sheet" "^2.0.11"
+    "@alfalab/core-components-portal" "^4.0.2"
+    "@alfalab/core-components-product-cover" "^2.0.4"
+    "@alfalab/core-components-progress-bar" "^4.0.0"
+    "@alfalab/core-components-pure-cell" "^5.0.4"
+    "@alfalab/core-components-radio" "^5.0.2"
+    "@alfalab/core-components-radio-group" "^5.2.1"
+    "@alfalab/core-components-scrollbar" "^4.0.0"
+    "@alfalab/core-components-segmented-control" "^2.0.0"
+    "@alfalab/core-components-select" "^18.2.8"
+    "@alfalab/core-components-select-with-tags" "^9.0.11"
+    "@alfalab/core-components-shared" "^1.1.1"
+    "@alfalab/core-components-side-panel" "^6.1.0"
+    "@alfalab/core-components-skeleton" "^6.0.1"
+    "@alfalab/core-components-slider" "^5.0.0"
+    "@alfalab/core-components-slider-input" "^10.1.2"
+    "@alfalab/core-components-sortable-list" "^2.0.2"
+    "@alfalab/core-components-space" "^4.1.0"
+    "@alfalab/core-components-spinner" "^5.0.2"
+    "@alfalab/core-components-stack" "^6.0.0"
+    "@alfalab/core-components-status" "^4.1.0"
+    "@alfalab/core-components-status-badge" "^2.0.1"
+    "@alfalab/core-components-stepped-progress-bar" "^3.1.1"
+    "@alfalab/core-components-steps" "^2.0.2"
+    "@alfalab/core-components-switch" "^5.0.2"
+    "@alfalab/core-components-system-message" "^3.0.3"
+    "@alfalab/core-components-tab-bar" "^3.0.3"
+    "@alfalab/core-components-table" "^3.0.11"
+    "@alfalab/core-components-tabs" "^9.2.8"
+    "@alfalab/core-components-tag" "^9.0.4"
+    "@alfalab/core-components-text" "^2.0.0"
+    "@alfalab/core-components-textarea" "^9.0.3"
+    "@alfalab/core-components-themes" "^14.2.0"
+    "@alfalab/core-components-time-input" "^3.0.4"
+    "@alfalab/core-components-toast" "^7.0.4"
+    "@alfalab/core-components-toast-plate" "^8.0.4"
+    "@alfalab/core-components-tooltip" "^8.0.11"
+    "@alfalab/core-components-types" "^1.0.0"
+    "@alfalab/core-components-typography" "^5.0.3"
+    "@alfalab/core-components-underlay" "^2.0.0"
+    "@alfalab/core-components-universal-date-input" "^3.1.0"
+    "@alfalab/core-components-universal-modal" "^2.0.11"
+    "@alfalab/core-components-vars" "^10.2.0"
+    "@alfalab/core-components-with-suffix" "^5.0.4"
+
+"@alfalab/data@^1.9.2":
+  version "1.9.2"
+  resolved "https://registry.yarnpkg.com/@alfalab/data/-/data-1.9.2.tgz#666e9b2b593256473329ebb026b7b59f4d6542f7"
+  integrity sha512-43KMYYerK5HS2MgaCRNU2Q3kaYskG1UmZDckmFmiM9dTbiyGN+7YQ1ZyEOsLrbXm6SxkHg65Gf8tYVKnSiLYwQ==
+
+"@alfalab/hooks@^1.13.1":
+  version "1.15.1"
+  resolved "https://registry.yarnpkg.com/@alfalab/hooks/-/hooks-1.15.1.tgz#679b46d464c82e5a1b45615f7f46ed40fc7f6669"
+  integrity sha512-x53hfsswld4H9wPXMZMpN53pqFig77AFlia6XgyiCUfvnrS6rmuuGZqzjqFuMXPXw1MnoFuvjRp6T8aiE6KWjA==
+  dependencies:
+    "@alfalab/utils" "^1.18.1"
     uuid "^8.3.2"
 
-"@alfalab/icons-glyph@^2.189.0":
-  version "2.210.0"
-  resolved "https://registry.yarnpkg.com/@alfalab/icons-glyph/-/icons-glyph-2.210.0.tgz#55a2821539ad7e7689b5b0b5ee39ed31d44e48b4"
-  integrity sha512-/Jez34xqHxWaVD6qL0tbAkZn3Q4XFBcP9W3ZmSIIjCbEiv6RkP8TmR06AX9wZck4lJNNupsXDdgT5as2+9t+jQ==
+"@alfalab/icons-glyph@^2.247.0":
+  version "2.268.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/icons-glyph/-/icons-glyph-2.268.0.tgz#afb9517211a3006a00fdf9af307e07986874b84a"
+  integrity sha512-tIZqHphlOZ6yyt6jHPearu2dSyV3ZL9l8hABBnNKQ6q9p7Ks7GJ+qF9jju7kHhCr5ASZrFUUhqy6nLhpe/9DNQ==
 
-"@alfalab/icons-logotype@^2.27.0":
-  version "2.33.0"
-  resolved "https://registry.yarnpkg.com/@alfalab/icons-logotype/-/icons-logotype-2.33.0.tgz#0ff50e03189d911b0724eec9831929c7b28647f0"
-  integrity sha512-+HxFrGWmCKES0gkLZHRJqKFuHywwB9XGsKX4BSJdlGD0a6HSCE9p4ZwbnO1WIQfqEyvdkeo0FIPXWFBva/mPAw==
+"@alfalab/icons-logo@^1.48.0":
+  version "1.55.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/icons-logo/-/icons-logo-1.55.0.tgz#efa82550141347f9a5cab8d2cb5564180f607028"
+  integrity sha512-0Tm02KNt+85NdRPmET5CZONRa9qg+C3EigEMoP3fnMT6YNBNgOiW+p9HYJhQKXoyx3Ib2+vqWavZgT5bXOIC1A==
+
+"@alfalab/icons-logotype@^2.34.0":
+  version "2.37.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/icons-logotype/-/icons-logotype-2.37.0.tgz#cce4b8b54ac6cd4386256e1a2fcdff23293b421c"
+  integrity sha512-clx5P0dbifjHh78cXzm999i27Pn+qgh7yTHxKbG4pGTTlpRkFUdg6SIpPSPueR/J8fYOpvdsr/rG03n7oGqNPQ==
 
 "@alfalab/react-canvas-pattern-lock@^2.0.7":
   version "2.0.8"
@@ -97,18 +1637,13 @@
     react-merge-refs "^1.1.0"
     react-use-event-hook "^0.9.6"
 
-"@alfalab/stack-context@^1.16.0":
-  version "1.16.0"
-  resolved "https://registry.yarnpkg.com/@alfalab/stack-context/-/stack-context-1.16.0.tgz#7f33b497f3903dcafeba563f2cf96adb6a9c345b"
-  integrity sha512-8XiqNU7WaHKK6HvlBr0TNj3WYoe8neC5s7FWCQkYjv8ybeQZ8q68EQvICW3GnfVNG3L/rhFbm6QtV2UObYfYzw==
-
-"@alfalab/utils@^1.13.2", "@alfalab/utils@^1.15.2":
-  version "1.16.0"
-  resolved "https://registry.yarnpkg.com/@alfalab/utils/-/utils-1.16.0.tgz#f097230c80cb0cd4ece5ca3b03751cae10a2660e"
-  integrity sha512-uCXjHhq8+4cWfw8k+TNgk+OKBRJXW857mPdRiiNhXmY44xLqVrWFCM5kl/xyCmfhWyzbGfi+XzdybGj8oAToXw==
+"@alfalab/utils@^1.18.0", "@alfalab/utils@^1.18.1":
+  version "1.18.1"
+  resolved "https://registry.yarnpkg.com/@alfalab/utils/-/utils-1.18.1.tgz#c1497d957ebda4ca7723c7ea0cf43cab79201cab"
+  integrity sha512-R2D96p9Iu8mC5zUok5fjyfCKEErLiVQMo8kfUYo6voBj14aCni7P3M0a8y0kSxLG5tenivyIrv1KF2ibSP/QlQ==
   dependencies:
-    "@alfalab/data" "^1.8.0"
-    lodash "4.17.21"
+    "@alfalab/data" "^1.9.2"
+    lodash "^4.17.21"
 
 "@ampproject/remapping@^2.1.0":
   version "2.2.0"
@@ -1321,7 +2856,7 @@
     "@dnd-kit/utilities" "^3.2.0"
     tslib "^2.0.0"
 
-"@dnd-kit/utilities@^3.2.0", "@dnd-kit/utilities@^3.2.2":
+"@dnd-kit/utilities@^3.2.0", "@dnd-kit/utilities@^3.2.1", "@dnd-kit/utilities@^3.2.2":
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/@dnd-kit/utilities/-/utilities-3.2.2.tgz#5a32b6af356dc5f74d61b37d6f7129a4040ced7b"
   integrity sha512-+MKAJEOfaBe5SmV6t34p80MMKhjvUz0vRrvVJbPT0WElzaOJ/1xs+D+KDv+tD/NE5ujfrChEcshd4fLn0wpiqg==
@@ -1858,11 +3393,6 @@
   resolved "https://registry.yarnpkg.com/@types/d3-timer/-/d3-timer-3.0.2.tgz#70bbda77dc23aa727413e22e214afa3f0e852f70"
   integrity sha512-Ps3T8E8dZDam6fUyNiMkekK3XUsaUEik+idO9/YjPtfj2qruF8tFBXS7XhtE4iIXBLxhmLjP3SXpLhVf21I9Lw==
 
-"@types/deep-equal@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@types/deep-equal/-/deep-equal-1.0.4.tgz#c0a854be62d6b9fae665137a6639aab53389a147"
-  integrity sha512-tqdiS4otQP4KmY0PR3u6KbZ5EWvhNdUoS/jc93UuK23C220lOZ/9TvjfxdPcKvqwwDVtmtSCrnr0p/2dirAxkA==
-
 "@types/graceful-fs@^4.1.3":
   version "4.1.5"
   resolved "https://registry.yarnpkg.com/@types/graceful-fs/-/graceful-fs-4.1.5.tgz#21ffba0d98da4350db64891f92a9e5db3cdb4e15"
@@ -2107,18 +3637,6 @@
     "@typescript-eslint/types" "5.32.0"
     eslint-visitor-keys "^3.3.0"
 
-"@virtuoso.dev/react-urx@^0.2.12":
-  version "0.2.13"
-  resolved "https://registry.yarnpkg.com/@virtuoso.dev/react-urx/-/react-urx-0.2.13.tgz#e2cfc42d259d2a002695e7517d34cb97b64ee9c4"
-  integrity sha512-MY0ugBDjFb5Xt8v2HY7MKcRGqw/3gTpMlLXId2EwQvYJoC8sP7nnXjAxcBtTB50KTZhO0SbzsFimaZ7pSdApwA==
-  dependencies:
-    "@virtuoso.dev/urx" "^0.2.13"
-
-"@virtuoso.dev/urx@^0.2.12", "@virtuoso.dev/urx@^0.2.13":
-  version "0.2.13"
-  resolved "https://registry.yarnpkg.com/@virtuoso.dev/urx/-/urx-0.2.13.tgz#a65e7e8d923cb03397ac876bfdd45c7f71c8edf1"
-  integrity sha512-iirJNv92A1ZWxoOHHDYW/1KPoi83939o83iUBQHIim0i3tMeSKEh+bxhJdTHQ86Mr4uXx9xGUTq69cp52ZP8Xw==
-
 JSONStream@^1.0.4:
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/JSONStream/-/JSONStream-1.3.5.tgz#3208c1f08d3a4d99261ab64f92302bc15e111ca0"
@@ -2279,14 +3797,6 @@ aria-query@^5.0.0:
   resolved "https://registry.yarnpkg.com/aria-query/-/aria-query-5.0.0.tgz#210c21aaf469613ee8c9a62c7f86525e058db52c"
   integrity sha512-V+SM7AbUwJ+EBnB8+DXs0hPZHO0W6pqBcc0dW90OwtVG02PswOu/teuARoLQjdDOH+t9pJgGnW5/Qmouf3gPJg==
 
-array-buffer-byte-length@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/array-buffer-byte-length/-/array-buffer-byte-length-1.0.1.tgz#1e5583ec16763540a27ae52eed99ff899223568f"
-  integrity sha512-ahC5W1xgou+KTXix4sAO8Ki12Q+jf4i0+tmk3sC+zgcynshkHxzpXdImBehiUYKKKDwvfFiJl1tZt6ewscS1Mg==
-  dependencies:
-    call-bind "^1.0.5"
-    is-array-buffer "^3.0.4"
-
 array-ify@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/array-ify/-/array-ify-1.0.0.tgz#9e528762b4a9066ad163a6962a364418e9626ece"
@@ -2347,13 +3857,6 @@ asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
   integrity sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==
-
-available-typed-arrays@^1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/available-typed-arrays/-/available-typed-arrays-1.0.7.tgz#a5cc375d6a03c2efc87a553f3e0b1522def14846"
-  integrity sha512-wvUjBtSGN7+7SjNpq/9M2Tg350UZD3q62IFZLbRAR1bSMlCo1ZaeW+BJ+D090e4hIIZLBcTDWe4Mh4jvUDajzQ==
-  dependencies:
-    possible-typed-array-names "^1.0.0"
 
 axe-core@^4.4.3:
   version "4.4.3"
@@ -2521,17 +4024,6 @@ call-bind@^1.0.0, call-bind@^1.0.2:
     function-bind "^1.1.1"
     get-intrinsic "^1.0.2"
 
-call-bind@^1.0.5, call-bind@^1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/call-bind/-/call-bind-1.0.7.tgz#06016599c40c56498c18769d2730be242b6fa3b9"
-  integrity sha512-GHTSNSYICQ7scH7sZ+M2rFopRoLh8t2bLSW6BbgrtLsahOIB5iyAVJf9GjWK3cYTDaMj4XdBpM1cA6pIS0Kv2w==
-  dependencies:
-    es-define-property "^1.0.0"
-    es-errors "^1.3.0"
-    function-bind "^1.1.2"
-    get-intrinsic "^1.2.4"
-    set-function-length "^1.2.1"
-
 callsites@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/callsites/-/callsites-3.1.0.tgz#b3630abd8943432f54b3f0519238e33cd7df2f73"
@@ -2636,7 +4128,7 @@ cjs-module-lexer@^1.0.0:
   resolved "https://registry.yarnpkg.com/cjs-module-lexer/-/cjs-module-lexer-1.2.2.tgz#9f84ba3244a512f3a54e5277e8eef4c489864e40"
   integrity sha512-cOU9usZw8/dXIXKtwa8pM0OTJQuJkxMN6w30csNRUerHfeQ5R6U3kkU/FtJeIf3M202OHfY2U8ccInBG7/xogA==
 
-classnames@^2.3.1:
+classnames@^2.5.1:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.5.1.tgz#ba774c614be0f016da105c858e7159eae8e7687b"
   integrity sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==
@@ -3034,30 +4526,6 @@ dedent@^0.7.0:
   resolved "https://registry.yarnpkg.com/dedent/-/dedent-0.7.0.tgz#2495ddbaf6eb874abb0e1be9df22d2e5a544326c"
   integrity sha512-Q6fKUPqnAHAyhiUgFU7BUzLiv0kd8saH9al7tnu5Q/okj6dnupxyTgFIBjVzJATdfIAm9NAsvXNzjaKa+bxVyA==
 
-deep-equal@^2.2.3:
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/deep-equal/-/deep-equal-2.2.3.tgz#af89dafb23a396c7da3e862abc0be27cf51d56e1"
-  integrity sha512-ZIwpnevOurS8bpT4192sqAowWM76JDKSHYzMLty3BZGSswgq6pBaH3DhCSW5xVAZICZyKdOBPjwww5wfgT/6PA==
-  dependencies:
-    array-buffer-byte-length "^1.0.0"
-    call-bind "^1.0.5"
-    es-get-iterator "^1.1.3"
-    get-intrinsic "^1.2.2"
-    is-arguments "^1.1.1"
-    is-array-buffer "^3.0.2"
-    is-date-object "^1.0.5"
-    is-regex "^1.1.4"
-    is-shared-array-buffer "^1.0.2"
-    isarray "^2.0.5"
-    object-is "^1.1.5"
-    object-keys "^1.1.1"
-    object.assign "^4.1.4"
-    regexp.prototype.flags "^1.5.1"
-    side-channel "^1.0.4"
-    which-boxed-primitive "^1.0.2"
-    which-collection "^1.0.1"
-    which-typed-array "^1.1.13"
-
 deep-is@^0.1.3, deep-is@~0.1.3:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/deep-is/-/deep-is-0.1.4.tgz#a6f2dce612fadd2ef1f519b73551f17e85199831"
@@ -3073,15 +4541,6 @@ deepmerge@^4.2.2:
   resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-4.2.2.tgz#44d2ea3679b8f4d4ffba33f03d865fc1e7bf4955"
   integrity sha512-FJ3UgI4gIl+PHZm53knsuSFpE+nESMr7M4v9QcgB7S63Kj/6WqMiFQJpBBYz1Pt+66bZpP3Q7Lye0Oo9MPKEdg==
 
-define-data-property@^1.0.1, define-data-property@^1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/define-data-property/-/define-data-property-1.1.4.tgz#894dc141bb7d3060ae4366f6a0107e68fbe48c5e"
-  integrity sha512-rBMvIzlpA8v6E+SJZoo++HAYqsLrkg7MSfIinMPFhmkorw7X+dOXVJQs+QT69zGkzMyfDnIMN2Wid1+NbL3T+A==
-  dependencies:
-    es-define-property "^1.0.0"
-    es-errors "^1.3.0"
-    gopd "^1.0.1"
-
 define-lazy-prop@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/define-lazy-prop/-/define-lazy-prop-2.0.0.tgz#3f7ae421129bcaaac9bc74905c98a0009ec9ee7f"
@@ -3095,19 +4554,15 @@ define-properties@^1.1.3, define-properties@^1.1.4:
     has-property-descriptors "^1.0.0"
     object-keys "^1.1.1"
 
-define-properties@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/define-properties/-/define-properties-1.2.1.tgz#10781cc616eb951a80a034bafcaa7377f6af2b6c"
-  integrity sha512-8QmQKqEASLd5nx0U1B1okLElbUuuttJ/AnYmRXbbbGDWh6uS208EjD4Xqq/I9wK7u0v6O08XhTWnt5XtEbR6Dg==
-  dependencies:
-    define-data-property "^1.0.1"
-    has-property-descriptors "^1.0.0"
-    object-keys "^1.1.1"
-
 delayed-stream@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
   integrity sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==
+
+detect-browser@^5.3.0:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/detect-browser/-/detect-browser-5.3.0.tgz#9705ef2bddf46072d0f7265a1fe300e36fe7ceca"
+  integrity sha512-53rsFbGdwMwlF7qvCt0ypLM5V5/Mbl0szB7GPN8y9NCcbknYOeVVXdrXEq+90IwAfrrzt6Hd+u2E2ntakICU8w==
 
 detect-newline@^3.0.0:
   version "3.1.0"
@@ -3268,33 +4723,6 @@ es-abstract@^1.19.0, es-abstract@^1.19.1, es-abstract@^1.19.2, es-abstract@^1.19
     string.prototype.trimend "^1.0.5"
     string.prototype.trimstart "^1.0.5"
     unbox-primitive "^1.0.2"
-
-es-define-property@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/es-define-property/-/es-define-property-1.0.0.tgz#c7faefbdff8b2696cf5f46921edfb77cc4ba3845"
-  integrity sha512-jxayLKShrEqqzJ0eumQbVhTYQM27CfT1T35+gCgDFoL82JLsXqTJ76zv6A0YLOgEnLUMvLzsDsGIrl8NFpT2gQ==
-  dependencies:
-    get-intrinsic "^1.2.4"
-
-es-errors@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/es-errors/-/es-errors-1.3.0.tgz#05f75a25dab98e4fb1dcd5e1472c0546d5057c8f"
-  integrity sha512-Zf5H2Kxt2xjTvbJvP2ZWLEICxA6j+hAmMzIlypy4xcBg1vKVnx89Wy0GbS+kf5cwCVFFzdCFh2XSCFNULS6csw==
-
-es-get-iterator@^1.1.3:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/es-get-iterator/-/es-get-iterator-1.1.3.tgz#3ef87523c5d464d41084b2c3c9c214f1199763d6"
-  integrity sha512-sPZmqHBe6JIiTfN5q2pEi//TwxmAFHwj/XEuYjTuse78i8KxaqMTTzxPoFKuzRpDpTJ+0NAbpfenkmH2rePtuw==
-  dependencies:
-    call-bind "^1.0.2"
-    get-intrinsic "^1.1.3"
-    has-symbols "^1.0.3"
-    is-arguments "^1.1.1"
-    is-map "^2.0.2"
-    is-set "^2.0.2"
-    is-string "^1.0.7"
-    isarray "^2.0.5"
-    stop-iteration-iterator "^1.0.0"
 
 es-shim-unscopables@^1.0.0:
   version "1.0.0"
@@ -3737,13 +5165,6 @@ focus-lock@^1.3.5:
   dependencies:
     tslib "^2.0.3"
 
-for-each@^0.3.3:
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/for-each/-/for-each-0.3.3.tgz#69b447e88a0a5d32c3e7084f3f1710034b21376e"
-  integrity sha512-jqYfLp7mo9vIyQf8ykW2v7A+2N4QjeCeI5+Dz9XraiO1ign81wjiH7Fb9vSOWvQfNtmSa4H2RoQTrrXivdUZmw==
-  dependencies:
-    is-callable "^1.1.3"
-
 form-data@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/form-data/-/form-data-4.0.0.tgz#93919daeaf361ee529584b9b31664dc12c9fa452"
@@ -3795,11 +5216,6 @@ function-bind@^1.1.1:
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
   integrity sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==
 
-function-bind@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.2.tgz#2c02d864d97f3ea6c8830c464cbd11ab6eab7a1c"
-  integrity sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==
-
 function.prototype.name@^1.1.5:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/function.prototype.name/-/function.prototype.name-1.1.5.tgz#cce0505fe1ffb80503e6f9e46cc64e46a12a9621"
@@ -3815,7 +5231,7 @@ functional-red-black-tree@^1.0.1:
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
   integrity sha512-dsKNQNdj6xA3T+QlADDA7mOSlX0qiMINjn0cgr+eGHGsbSHzTabcIogz2+p/iqP1Xs6EP/sS2SbqH+brGTbq0g==
 
-functions-have-names@^1.2.2, functions-have-names@^1.2.3:
+functions-have-names@^1.2.2:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/functions-have-names/-/functions-have-names-1.2.3.tgz#0404fe4ee2ba2f607f0e0ec3c80bae994133b834"
   integrity sha512-xckBUXyTIqT97tq2x2AMb+g163b5JFysYk0x4qxNFwbfQkmNZoiRHb6sPzI9/QV33WeuvVYBUIiD4NzNIyqaRQ==
@@ -3839,16 +5255,10 @@ get-intrinsic@^1.0.2, get-intrinsic@^1.1.0, get-intrinsic@^1.1.1:
     has "^1.0.3"
     has-symbols "^1.0.3"
 
-get-intrinsic@^1.1.3, get-intrinsic@^1.2.1, get-intrinsic@^1.2.2, get-intrinsic@^1.2.4:
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/get-intrinsic/-/get-intrinsic-1.2.4.tgz#e385f5a4b5227d449c3eabbad05494ef0abbeadd"
-  integrity sha512-5uYhsJH8VJBTv7oslg4BznJYhDoRI6waYCxMmCdnTrcCrHA/fCFKoTFz2JKKE0HdDFUF7/oQuhzumXJK7paBRQ==
-  dependencies:
-    es-errors "^1.3.0"
-    function-bind "^1.1.2"
-    has-proto "^1.0.1"
-    has-symbols "^1.0.3"
-    hasown "^2.0.0"
+get-nonce@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/get-nonce/-/get-nonce-1.0.1.tgz#fdf3f0278073820d2ce9426c18f07481b1e0cdf3"
+  integrity sha512-FJhYRoDaiatfEkUK8HKlicmu/3SGFD51q3itKDGoSTysQJBnfOcxU5GxnhE1E6soB76MbT0MBtnKJuXyAx+96Q==
 
 get-package-type@^0.1.0:
   version "0.1.0"
@@ -3962,13 +5372,6 @@ globrex@^0.1.2:
   resolved "https://registry.yarnpkg.com/globrex/-/globrex-0.1.2.tgz#dd5d9ec826232730cd6793a5e33a9302985e6098"
   integrity sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==
 
-gopd@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/gopd/-/gopd-1.0.1.tgz#29ff76de69dac7489b7c0918a5788e56477c332c"
-  integrity sha512-d65bNlIadxvpb/A2abVdlqKqV563juRnZ1Wtk6s1sIR8uNsXR70xqIzVqxVf1eTqDunwT2MkczEeaezCKTZhwA==
-  dependencies:
-    get-intrinsic "^1.1.3"
-
 graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.4, graceful-fs@^4.2.9:
   version "4.2.10"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.10.tgz#147d3a006da4ca3ce14728c7aefc287c367d7a6c"
@@ -4011,18 +5414,6 @@ has-property-descriptors@^1.0.0:
   dependencies:
     get-intrinsic "^1.1.1"
 
-has-property-descriptors@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/has-property-descriptors/-/has-property-descriptors-1.0.2.tgz#963ed7d071dc7bf5f084c5bfbe0d1b6222586854"
-  integrity sha512-55JNKuIW+vq4Ke1BjOTjM2YctQIvCT7GFzHwmfZPGo5wnrgkid0YQtnAleFSqumZm4az3n2BS+erby5ipJdgrg==
-  dependencies:
-    es-define-property "^1.0.0"
-
-has-proto@^1.0.1:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/has-proto/-/has-proto-1.0.3.tgz#b31ddfe9b0e6e9914536a6ab286426d0214f77fd"
-  integrity sha512-SJ1amZAJUiZS+PhsVLf5tGydlaVB8EdFpaSO4gmiUKUOxk8qzn5AIy4ZeJUmh22znIdk/uMAUT2pl3FxzVUH+Q==
-
 has-symbols@^1.0.1, has-symbols@^1.0.2, has-symbols@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/has-symbols/-/has-symbols-1.0.3.tgz#bb7b2c4349251dce87b125f7bdf874aa7c8b39f8"
@@ -4035,26 +5426,12 @@ has-tostringtag@^1.0.0:
   dependencies:
     has-symbols "^1.0.2"
 
-has-tostringtag@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/has-tostringtag/-/has-tostringtag-1.0.2.tgz#2cdc42d40bef2e5b4eeab7c01a73c54ce7ab5abc"
-  integrity sha512-NqADB8VjPFLM2V0VvHUewwwsw0ZWBaIdgo+ieHtK3hasLz4qeCRjYcqfB6AQrBggRKppKF8L52/VqdVsO47Dlw==
-  dependencies:
-    has-symbols "^1.0.3"
-
 has@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/has/-/has-1.0.3.tgz#722d7cbfc1f6aa8241f16dd814e011e1f41e8796"
   integrity sha512-f2dvO0VU6Oej7RkWJGrehjbzMAjFp5/VKPp5tTpWIV4JHHZK1/BxbFRtf/siA2SWTe09caDmVtYYzWEIbBS4zw==
   dependencies:
     function-bind "^1.1.1"
-
-hasown@^2.0.0:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/hasown/-/hasown-2.0.2.tgz#003eaf91be7adc372e84ec59dc37252cedb80003"
-  integrity sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==
-  dependencies:
-    function-bind "^1.1.2"
 
 hls.js@^1.5.13:
   version "1.5.17"
@@ -4201,15 +5578,6 @@ internal-slot@^1.0.3:
     has "^1.0.3"
     side-channel "^1.0.4"
 
-internal-slot@^1.0.4:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/internal-slot/-/internal-slot-1.0.7.tgz#c06dcca3ed874249881007b0a5523b172a190802"
-  integrity sha512-NGnrKwXzSms2qUUih/ILZ5JBqNTSa1+ZmP6flaIp6KmSElgE9qdndzS3cqjrDovwFdmwsGsLdeFgB6suw+1e9g==
-  dependencies:
-    es-errors "^1.3.0"
-    hasown "^2.0.0"
-    side-channel "^1.0.4"
-
 "internmap@1 - 2":
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/internmap/-/internmap-2.0.3.tgz#6685f23755e43c524e251d29cbc97248e3061009"
@@ -4232,22 +5600,6 @@ is-alphanumerical@^1.0.0:
   dependencies:
     is-alphabetical "^1.0.0"
     is-decimal "^1.0.0"
-
-is-arguments@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/is-arguments/-/is-arguments-1.1.1.tgz#15b3f88fda01f2a97fec84ca761a560f123efa9b"
-  integrity sha512-8Q7EARjzEnKpt/PCD7e1cgUS0a6X8u5tdSiMqXhojOdoV9TsMsiO+9VLC5vAmO8N7/GmXn7yjR8qnA6bVAEzfA==
-  dependencies:
-    call-bind "^1.0.2"
-    has-tostringtag "^1.0.0"
-
-is-array-buffer@^3.0.2, is-array-buffer@^3.0.4:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/is-array-buffer/-/is-array-buffer-3.0.4.tgz#7a1f92b3d61edd2bc65d24f130530ea93d7fae98"
-  integrity sha512-wcjaerHw0ydZwfhiKbXJWLDY8A7yV7KhjQOpb83hGgGfId/aQa4TOvwyzn2PuswW2gPCYEL/nEAiSVpdOj1lXw==
-  dependencies:
-    call-bind "^1.0.2"
-    get-intrinsic "^1.2.1"
 
 is-arrayish@^0.2.1:
   version "0.2.1"
@@ -4281,11 +5633,6 @@ is-buffer@^2.0.0:
   resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-2.0.5.tgz#ebc252e400d22ff8d77fa09888821a24a658c191"
   integrity sha512-i2R6zNFDwgEHJyQUtJEk0XFi1i0dPFn/oqjK3/vPCcDeJvW5NQ83V8QbicfF1SupOaB0h8ntgBC2YiE7dfyctQ==
 
-is-callable@^1.1.3:
-  version "1.2.7"
-  resolved "https://registry.yarnpkg.com/is-callable/-/is-callable-1.2.7.tgz#3bc2a85ea742d9e36205dcacdd72ca1fdc51b055"
-  integrity sha512-1BC0BVFhS/p0qtw6enp8e+8OD0UrK0oFLztSjNzhcKA3WDuJxxAPXzPuPtKkjEY9UUoEWlX/8fgKeu2S8i9JTA==
-
 is-callable@^1.1.4, is-callable@^1.2.4:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/is-callable/-/is-callable-1.2.4.tgz#47301d58dd0259407865547853df6d61fe471945"
@@ -4305,7 +5652,7 @@ is-core-module@^2.5.0, is-core-module@^2.8.1, is-core-module@^2.9.0:
   dependencies:
     has "^1.0.3"
 
-is-date-object@^1.0.1, is-date-object@^1.0.5:
+is-date-object@^1.0.1:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/is-date-object/-/is-date-object-1.0.5.tgz#0841d5536e724c25597bf6ea62e1bd38298df31f"
   integrity sha512-9YQaSxsAiSwcvS33MBk3wTCVnWK+HhF8VZR2jRxehM16QcVOdHqPn4VPHmRK4lSr38n9JriurInLcP90xsYNfQ==
@@ -4354,11 +5701,6 @@ is-hexadecimal@^1.0.0:
   resolved "https://registry.yarnpkg.com/is-hexadecimal/-/is-hexadecimal-1.0.4.tgz#cc35c97588da4bd49a8eedd6bc4082d44dcb23a7"
   integrity sha512-gyPJuv83bHMpocVYoqof5VDiZveEoGoFL8m3BXNb2VW8Xs+rz9kqO8LOQ5DH6EsuvilT1ApazU0pyl+ytbPtlw==
 
-is-map@^2.0.2, is-map@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/is-map/-/is-map-2.0.3.tgz#ede96b7fe1e270b3c4465e3a465658764926d62e"
-  integrity sha512-1Qed0/Hr2m+YqxnM09CjA2d/i6YZNfF6R2oRAOj36eUdS6qIV/huPJNSEpKbupewFs+ZsJlxsjjPbc0/afW6Lw==
-
 is-negative-zero@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/is-negative-zero/-/is-negative-zero-2.0.2.tgz#7bf6f03a28003b8b3965de3ac26f664d765f3150"
@@ -4404,11 +5746,6 @@ is-regex@^1.1.4:
     call-bind "^1.0.2"
     has-tostringtag "^1.0.0"
 
-is-set@^2.0.2, is-set@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/is-set/-/is-set-2.0.3.tgz#8ab209ea424608141372ded6e0cb200ef1d9d01d"
-  integrity sha512-iPAjerrse27/ygGLxw+EBR9agv9Y6uLeYVJMu+QNCoouJ1/1ri0mGrcWpfCqFZuzzx3WjtwxG098X+n4OuRkPg==
-
 is-shared-array-buffer@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/is-shared-array-buffer/-/is-shared-array-buffer-1.0.2.tgz#8f259c573b60b6a32d4058a1a07430c0a7344c79"
@@ -4447,11 +5784,6 @@ is-text-path@^1.0.1:
   dependencies:
     text-extensions "^1.0.0"
 
-is-weakmap@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/is-weakmap/-/is-weakmap-2.0.2.tgz#bf72615d649dfe5f699079c54b83e47d1ae19cfd"
-  integrity sha512-K5pXYOm9wqY1RgjpL3YTkF39tni1XajUIkawTLUo9EZEVUFga5gSQJF8nNS7ZwJQ02y+1YCNYcMh+HIf1ZqE+w==
-
 is-weakref@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/is-weakref/-/is-weakref-1.0.2.tgz#9529f383a9338205e89765e0392efc2f100f06f2"
@@ -4459,25 +5791,12 @@ is-weakref@^1.0.2:
   dependencies:
     call-bind "^1.0.2"
 
-is-weakset@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/is-weakset/-/is-weakset-2.0.3.tgz#e801519df8c0c43e12ff2834eead84ec9e624007"
-  integrity sha512-LvIm3/KWzS9oRFHugab7d+M/GcBXuXX5xZkzPmN+NxihdQlZUQ4dWuSV1xR/sq6upL1TJEDrfBgRepHFdBtSNQ==
-  dependencies:
-    call-bind "^1.0.7"
-    get-intrinsic "^1.2.4"
-
 is-wsl@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/is-wsl/-/is-wsl-2.2.0.tgz#74a4c76e77ca9fd3f932f290c17ea326cd157271"
   integrity sha512-fKzAra0rGJUUBwGBgNkHZuToZcn+TtXHpeCgmkMJMMYx1sQDYaCSyjJBSCa2nH1DGm7s3n1oBnohoVTBaN7Lww==
   dependencies:
     is-docker "^2.0.0"
-
-isarray@^2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/isarray/-/isarray-2.0.5.tgz#8af1e4c1221244cc62459faf38940d4e644a5723"
-  integrity sha512-xHjhDr3cNBK0BzdUJSPXZntQUx/mwMS5Rw4A7lPJ90XGAO6ISP/ePDNuo0vhqOZU+UD5JoodwCAAoZQd3FeAKw==
 
 isexe@^2.0.0:
   version "2.0.0"
@@ -5158,7 +6477,7 @@ lodash.throttle@^4.1.1:
   resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
   integrity sha512-wIkUCfVKpVsWo3JSZlc+8MB5it+2AN5W8J7YVMST30UrvcQNZ1Okbj+rbVniijTWE6FGYy4XJq/rHkas8qJMLQ==
 
-lodash@4.17.21, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.21:
+lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.21:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
@@ -5482,14 +6801,6 @@ object-inspect@^1.12.0, object-inspect@^1.12.2, object-inspect@^1.9.0:
   resolved "https://registry.yarnpkg.com/object-inspect/-/object-inspect-1.12.2.tgz#c0641f26394532f28ab8d796ab954e43c009a8ea"
   integrity sha512-z+cPxW0QGUp0mcqcsgQyLVRDoXFQbXOwBaqyF7VIgI4TWNQsDHrBpUQslRmIfAoYWdYzs6UlKJtB2XJpTaNSpQ==
 
-object-is@^1.1.5:
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/object-is/-/object-is-1.1.6.tgz#1a6a53aed2dd8f7e6775ff870bea58545956ab07"
-  integrity sha512-F8cZ+KfGlSGi09lJT7/Nd6KJZ9ygtvYC0/UYYLI9nmQKLMnydpB9yvbv9K1uSkEu7FU9vYPmVwLg328tX+ot3Q==
-  dependencies:
-    call-bind "^1.0.7"
-    define-properties "^1.2.1"
-
 object-keys@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/object-keys/-/object-keys-1.1.1.tgz#1c47f272df277f3b1daf061677d9c82e2322c60e"
@@ -5503,16 +6814,6 @@ object.assign@^4.1.0, object.assign@^4.1.2:
     call-bind "^1.0.0"
     define-properties "^1.1.3"
     has-symbols "^1.0.1"
-    object-keys "^1.1.1"
-
-object.assign@^4.1.4:
-  version "4.1.5"
-  resolved "https://registry.yarnpkg.com/object.assign/-/object.assign-4.1.5.tgz#3a833f9ab7fdb80fc9e8d2300c803d216d8fdbb0"
-  integrity sha512-byy+U7gp+FVwmyzKPYhW2h5l3crpmGsxl7X2s8y43IgxvG4g3QZ6CffDtsNQy1WsmZpQbO+ybo0AlW7TY6DcBQ==
-  dependencies:
-    call-bind "^1.0.5"
-    define-properties "^1.2.1"
-    has-symbols "^1.0.3"
     object-keys "^1.1.1"
 
 object.entries@^1.1.5:
@@ -5769,11 +7070,6 @@ popper-max-size-modifier@^0.2.0:
   resolved "https://registry.yarnpkg.com/popper-max-size-modifier/-/popper-max-size-modifier-0.2.0.tgz#1574744401296a488b4974909d130a85db94256f"
   integrity sha512-UerPt9pZfTFnpSpIBVJrR3ibHMuU1k5K01AyNLfMUWCr4z1MFH+dsayPlAF9ZeYExa02HPiQn5OIMqUSVtJEbg==
 
-possible-typed-array-names@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/possible-typed-array-names/-/possible-typed-array-names-1.0.0.tgz#89bb63c6fada2c3e90adc4a647beeeb39cc7bf8f"
-  integrity sha512-d7Uw+eZoloe0EHDIYoe+bQ5WXnGMOpmiZFTuMWCwpjzzkL2nTjcKiAk4hh8TjnGye2TwWOk3UXucZ+3rbmBa8Q==
-
 prelude-ls@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
@@ -5890,7 +7186,7 @@ react-fast-compare@^2.0.1:
   resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-2.0.4.tgz#e84b4d455b0fec113e0402c329352715196f81f9"
   integrity sha512-suNP+J1VU1MWFKcyt7RtjiSWUjvidmQSlqu+eHslq+342xCbGTYmC0mEhPCOHxlW0CywylOC1u2DFAT+bv4dBw==
 
-react-fast-compare@^3.0.1:
+react-fast-compare@^3.0.1, react-fast-compare@^3.2.2:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-3.2.2.tgz#929a97a532304ce9fee4bcae44234f1ce2c21d49"
   integrity sha512-nsO+KSNgo1SbJqJEYRE9ERzo7YtYbou/OqjSQKxV7jcKox7+usiUVZOAC+XnDOABXggQTno0Y1CpVnuWEc1boQ==
@@ -5959,14 +7255,41 @@ react-popper@^2.3.0:
     react-fast-compare "^3.0.1"
     warning "^4.0.2"
 
-react-smooth@^4.0.0:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/react-smooth/-/react-smooth-4.0.1.tgz#6200d8699bfe051ae40ba187988323b1449eab1a"
-  integrity sha512-OE4hm7XqR0jNOq3Qmk9mFLyd6p2+j6bvbPJ7qlB7+oo0eNcL2l7WQzG6MBnT3EXY6xzkLMUBec3AfewJdA0J8w==
+react-remove-scroll-bar@^2.3.7:
+  version "2.3.8"
+  resolved "https://registry.yarnpkg.com/react-remove-scroll-bar/-/react-remove-scroll-bar-2.3.8.tgz#99c20f908ee467b385b68a3469b4a3e750012223"
+  integrity sha512-9r+yi9+mgU33AKcj6IbT9oRCO78WriSj6t/cF8DWBZJ9aOGPOTEDvdUDz1FwKim7QXWwmHqtdHnRJfhAxEG46Q==
+  dependencies:
+    react-style-singleton "^2.2.2"
+    tslib "^2.0.0"
+
+react-remove-scroll@^2.5.5:
+  version "2.7.2"
+  resolved "https://registry.yarnpkg.com/react-remove-scroll/-/react-remove-scroll-2.7.2.tgz#6442da56791117661978ae99cd29be9026fecca0"
+  integrity sha512-Iqb9NjCCTt6Hf+vOdNIZGdTiH1QSqr27H/Ek9sv/a97gfueI/5h1s3yRi1nngzMUaOOToin5dI1dXKdXiF+u0Q==
+  dependencies:
+    react-remove-scroll-bar "^2.3.7"
+    react-style-singleton "^2.2.3"
+    tslib "^2.1.0"
+    use-callback-ref "^1.3.3"
+    use-sidecar "^1.1.3"
+
+react-smooth@^4.0.4:
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/react-smooth/-/react-smooth-4.0.4.tgz#a5875f8bb61963ca61b819cedc569dc2453894b4"
+  integrity sha512-gnGKTpYwqL0Iii09gHobNolvX4Kiq4PKx6eWBCYYix+8cdw+cGo3do906l1NBPKkSWx1DghC1dlWG9L2uGd61Q==
   dependencies:
     fast-equals "^5.0.1"
     prop-types "^15.8.1"
     react-transition-group "^4.4.5"
+
+react-style-singleton@^2.2.2, react-style-singleton@^2.2.3:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/react-style-singleton/-/react-style-singleton-2.2.3.tgz#4265608be69a4d70cfe3047f2c6c88b2c3ace388"
+  integrity sha512-b6jSvxvVnyptAiLjbkWLE/lOnR4lfTtDAl+eUC7RZy+QQWc6wRzIV2CE6xBuMmDxc2qIihtDCZD5NPOFl7fRBQ==
+  dependencies:
+    get-nonce "^1.0.0"
+    tslib "^2.0.0"
 
 react-swipeable@^7.0.0:
   version "7.0.2"
@@ -6004,13 +7327,10 @@ react-virtual@^2.3.2:
   dependencies:
     "@reach/observe-rect" "^1.1.0"
 
-react-virtuoso@^2.12.0:
-  version "2.19.1"
-  resolved "https://registry.yarnpkg.com/react-virtuoso/-/react-virtuoso-2.19.1.tgz#a660a5c3cafcc7a84b59dfc356e1916e632c1e3a"
-  integrity sha512-zF6MAwujNGy2nJWCx/Df92ay/RnV2Kj4glUZfdyadI4suAn0kAZHB1BeI7yPFVp2iSccLzFlszhakWyr+fJ4Dw==
-  dependencies:
-    "@virtuoso.dev/react-urx" "^0.2.12"
-    "@virtuoso.dev/urx" "^0.2.12"
+react-virtuoso@^4.12.5:
+  version "4.18.1"
+  resolved "https://registry.yarnpkg.com/react-virtuoso/-/react-virtuoso-4.18.1.tgz#3eb7078f2739a31b96c723374019e587deeb6ebc"
+  integrity sha512-KF474cDwaSb9+SJ380xruBB4P+yGWcVkcu26HtMqYNMTYlYbrNy8vqMkE+GpAApPPufJqgOLMoWMFG/3pJMXUA==
 
 react@^18.2.0:
   version "18.2.0"
@@ -6061,16 +7381,16 @@ recharts-scale@^0.4.4:
   dependencies:
     decimal.js-light "^2.4.1"
 
-recharts@^2.1.2:
-  version "2.13.3"
-  resolved "https://registry.yarnpkg.com/recharts/-/recharts-2.13.3.tgz#a5ce61e493dff921a14a14a8f42a9f2d2bbefd5a"
-  integrity sha512-YDZ9dOfK9t3ycwxgKbrnDlRC4BHdjlY73fet3a0C1+qGMjXVZe6+VXmpOIIhzkje5MMEL8AN4hLIe4AMskBzlA==
+recharts@^2.12.7:
+  version "2.15.4"
+  resolved "https://registry.yarnpkg.com/recharts/-/recharts-2.15.4.tgz#0ed3e66c0843bcf2d9f9a172caf97b1d05127a5f"
+  integrity sha512-UT/q6fwS3c1dHbXv2uFgYJ9BMFHu3fwnd7AYZaEQhXuYQ4hgsxLvsUXzGdKeZrW5xopzDCvuA2N41WJ88I7zIw==
   dependencies:
     clsx "^2.0.0"
     eventemitter3 "^4.0.1"
     lodash "^4.17.21"
     react-is "^18.3.1"
-    react-smooth "^4.0.0"
+    react-smooth "^4.0.4"
     recharts-scale "^0.4.4"
     tiny-invariant "^1.3.1"
     victory-vendor "^36.6.8"
@@ -6120,16 +7440,6 @@ regexp.prototype.flags@^1.4.1, regexp.prototype.flags@^1.4.3:
     call-bind "^1.0.2"
     define-properties "^1.1.3"
     functions-have-names "^1.2.2"
-
-regexp.prototype.flags@^1.5.1:
-  version "1.5.3"
-  resolved "https://registry.yarnpkg.com/regexp.prototype.flags/-/regexp.prototype.flags-1.5.3.tgz#b3ae40b1d2499b8350ab2c3fe6ef3845d3a96f42"
-  integrity sha512-vqlC04+RQoFalODCbCumG2xIOvapzVMHwsyIGM/SIE8fRhFFsXeH8/QQ+s0T0kDAhKc4k30s73/0ydkHQz6HlQ==
-  dependencies:
-    call-bind "^1.0.7"
-    define-properties "^1.2.1"
-    es-errors "^1.3.0"
-    set-function-name "^2.0.2"
 
 regexpp@^3.2.0:
   version "3.2.0"
@@ -6326,28 +7636,6 @@ semver@^6.0.0, semver@^6.1.1, semver@^6.1.2, semver@^6.3.0:
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
   integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
 
-set-function-length@^1.2.1:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/set-function-length/-/set-function-length-1.2.2.tgz#aac72314198eaed975cf77b2c3b6b880695e5449"
-  integrity sha512-pgRc4hJ4/sNjWCSS9AmnS40x3bNMDTknHgL5UaMBTMyJnU90EgWh1Rz+MC9eFu4BuN/UwZjKQuY/1v3rM7HMfg==
-  dependencies:
-    define-data-property "^1.1.4"
-    es-errors "^1.3.0"
-    function-bind "^1.1.2"
-    get-intrinsic "^1.2.4"
-    gopd "^1.0.1"
-    has-property-descriptors "^1.0.2"
-
-set-function-name@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/set-function-name/-/set-function-name-2.0.2.tgz#16a705c5a0dc2f5e638ca96d8a8cd4e1c2b90985"
-  integrity sha512-7PGFlmtwsEADb0WYyvCMa1t+yke6daIG4Wirafur5kcf+MhUnPms1UeR0CKQdTZD81yESwMHbtn+TR+dMviakQ==
-  dependencies:
-    define-data-property "^1.1.4"
-    es-errors "^1.3.0"
-    functions-have-names "^1.2.3"
-    has-property-descriptors "^1.0.2"
-
 shebang-command@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/shebang-command/-/shebang-command-2.0.0.tgz#ccd0af4f8835fbdc265b82461aaf0c36663f34ea"
@@ -6499,13 +7787,6 @@ stack-utils@^2.0.3:
   integrity sha512-xrQcmYhOsn/1kX+Vraq+7j4oE2j/6BFscZ0etmYg81xuM8Gq0022Pxb8+IqgOFUIaxHs0KaSb7T1+OegiNrNFA==
   dependencies:
     escape-string-regexp "^2.0.0"
-
-stop-iteration-iterator@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/stop-iteration-iterator/-/stop-iteration-iterator-1.0.0.tgz#6a60be0b4ee757d1ed5254858ec66b10c49285e4"
-  integrity sha512-iCGQj+0l0HOdZ2AEeBADlsRC+vsnDsZsbdSiH1yNSjcfKM7fdpCMfqAL/dwF5BLiw/XhRft/Wax6zQbhq2BcjQ==
-  dependencies:
-    internal-slot "^1.0.4"
 
 string-argv@^0.3.1:
   version "0.3.1"
@@ -6895,11 +8176,6 @@ typescript@^4.6.4, typescript@^4.7.4:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.7.4.tgz#1a88596d1cf47d59507a1bcdfb5b9dfe4d488235"
   integrity sha512-C0WQT0gezHuw6AdY1M2jxUO83Rjf0HP7Sk1DtXj6j1EwkQNZrHAg2XPWlq62oqEhYvONq5pkC2Y9oPljWToLmQ==
 
-ui-primitives@^22.7.0:
-  version "22.10.0"
-  resolved "https://registry.yarnpkg.com/ui-primitives/-/ui-primitives-22.10.0.tgz#80d35a3cd3d64d152d7b33a447e7658780ea8b66"
-  integrity sha512-fKo5plrYnpNpax23lR0EOGqDXsYN7iPIgT/gDVA8knuXclALiiQ9HzkN9OMQkJxJIaXxrev5u10ZnONf6aKexg==
-
 unbox-primitive@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/unbox-primitive/-/unbox-primitive-1.0.2.tgz#29032021057d5e6cdbd08c5129c226dff8ed6f9e"
@@ -7021,6 +8297,13 @@ use-callback-ref@^1.3.2:
   dependencies:
     tslib "^2.0.0"
 
+use-callback-ref@^1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/use-callback-ref/-/use-callback-ref-1.3.3.tgz#98d9fab067075841c5b2c6852090d5d0feabe2bf"
+  integrity sha512-jQL3lRnocaFtu3V00JToYz/4QkNWswxijDaCVNZRiRTO3HQDLsdu1ZtmIUvV4yPp+rvWm5j0y0TG/S61cuijTg==
+  dependencies:
+    tslib "^2.0.0"
+
 use-composed-ref@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/use-composed-ref/-/use-composed-ref-1.3.0.tgz#3d8104db34b7b264030a9d916c5e94fbe280dbda"
@@ -7045,6 +8328,19 @@ use-sidecar@^1.1.2:
   dependencies:
     detect-node-es "^1.1.0"
     tslib "^2.0.0"
+
+use-sidecar@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/use-sidecar/-/use-sidecar-1.1.3.tgz#10e7fd897d130b896e2c546c63a5e8233d00efdb"
+  integrity sha512-Fedw0aZvkhynoPYlA5WXrMCAMm+nSWdZt6lzJQ7Ok8S6Q+VsHmHpRWndVRJ8Be0ZbkfPc5LRYH+5XrzXcEeLRQ==
+  dependencies:
+    detect-node-es "^1.1.0"
+    tslib "^2.0.0"
+
+use-sync-external-store@^1.4.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/use-sync-external-store/-/use-sync-external-store-1.6.0.tgz#b174bfa65cb2b526732d9f2ac0a408027876f32d"
+  integrity sha512-Pp6GSwGP/NrPIrxVFAIkOQeyw8lFenOHijQWkUTrDvrF4ALqylP2C/KCkeS9dpUM3KvYRQhna5vt7IL95+ZQ9w==
 
 util-deprecate@^1.0.1:
   version "1.0.2"
@@ -7192,27 +8488,6 @@ which-boxed-primitive@^1.0.2:
     is-number-object "^1.0.4"
     is-string "^1.0.5"
     is-symbol "^1.0.3"
-
-which-collection@^1.0.1:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/which-collection/-/which-collection-1.0.2.tgz#627ef76243920a107e7ce8e96191debe4b16c2a0"
-  integrity sha512-K4jVyjnBdgvc86Y6BkaLZEN933SwYOuBFkdmBu9ZfkcAbdVbpITnDmjvZ/aQjRXQrv5EPkTnD1s39GiiqbngCw==
-  dependencies:
-    is-map "^2.0.3"
-    is-set "^2.0.3"
-    is-weakmap "^2.0.2"
-    is-weakset "^2.0.3"
-
-which-typed-array@^1.1.13:
-  version "1.1.15"
-  resolved "https://registry.yarnpkg.com/which-typed-array/-/which-typed-array-1.1.15.tgz#264859e9b11a649b388bfaaf4f767df1f779b38d"
-  integrity sha512-oV0jmFtUky6CXfkqehVvBP/LSWJ2sy4vWMioiENyJLePrBO/yKyV9OyJySfAKosh+RYkIl5zJCNZ8/4JncrpdA==
-  dependencies:
-    available-typed-arrays "^1.0.7"
-    call-bind "^1.0.7"
-    for-each "^0.3.3"
-    gopd "^1.0.1"
-    has-tostringtag "^1.0.2"
 
 which@^2.0.1:
   version "2.0.2"
