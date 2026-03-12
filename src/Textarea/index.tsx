@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { ForwardedRef, forwardRef } from 'react';
 import {
     Textarea as CoreComponentsTextarea,
     TextareaProps as CoreComponentsTextareaProps,
@@ -10,28 +10,33 @@ import { SetRequired } from '../types/SetRequired';
 
 export type TextareaProps = SetRequired<CoreComponentsTextareaProps, 'name'>;
 
-export const Textarea: FC<TextareaProps> = (props) => {
-    // TODO: Maybe use `useInputFieldState` hook
-    const { name, onChange, ...restProps } = props;
-    const blurState = useFieldBlurState(props);
-    const { error } = useFieldOkState(props);
-    const [field, , form] = useField(name);
+export const Textarea = forwardRef(
+    (props: TextareaProps, ref: ForwardedRef<HTMLTextAreaElement>) => {
+        // TODO: Maybe use `useInputFieldState` hook
+        const { name, onChange, ...restProps } = props;
+        const blurState = useFieldBlurState(props);
+        const { error } = useFieldOkState(props);
+        const [field, , form] = useField(name);
 
-    const handleChange: TextareaProps['onChange'] = (event, payload) => {
-        form.setValue(payload.value);
+        const handleChange: TextareaProps['onChange'] = (event, payload) => {
+            form.setValue(payload.value);
 
-        if (onChange) {
-            onChange(event, payload);
-        }
-    };
+            if (onChange) {
+                onChange(event, payload);
+            }
+        };
 
-    return (
-        <CoreComponentsTextarea
-            {...restProps}
-            {...field}
-            {...blurState}
-            error={error}
-            onChange={handleChange}
-        />
-    );
-};
+        return (
+            <CoreComponentsTextarea
+                {...restProps}
+                {...field}
+                {...blurState}
+                error={error}
+                ref={ref}
+                onChange={handleChange}
+            />
+        );
+    },
+);
+
+Textarea.displayName = 'Textarea';
