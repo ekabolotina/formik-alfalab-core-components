@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { forwardRef } from 'react';
 import {
     Textarea as CoreComponentsTextarea,
     TextareaProps as CoreComponentsTextareaProps,
@@ -10,7 +10,7 @@ import { SetRequired } from '../types/SetRequired';
 
 export type TextareaProps = SetRequired<CoreComponentsTextareaProps, 'name'>;
 
-export const Textarea: FC<TextareaProps> = (props) => {
+export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>((props, ref) => {
     // TODO: Maybe use `useInputFieldState` hook
     const { name, onChange, ...restProps } = props;
     const blurState = useFieldBlurState(props);
@@ -31,7 +31,10 @@ export const Textarea: FC<TextareaProps> = (props) => {
             {...field}
             {...blurState}
             error={error}
+            ref={ref}
             onChange={handleChange}
         />
     );
-};
+});
+
+Textarea.displayName = 'Textarea';
