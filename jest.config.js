@@ -10,5 +10,6 @@ module.exports = {
         '^uuid$': require.resolve('uuid'),
         '^test-utils$': '<rootDir>test-utils',
     },
+    transformIgnorePatterns: ['/node_modules/(?!uuid/)'],
     testEnvironment: 'jsdom',
 };

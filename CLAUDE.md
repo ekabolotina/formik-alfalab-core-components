@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 A thin binding layer between [formik](https://formik.org/) and [`@alfalab/core-components`](https://github.com/core-ds/core-components). Each exported component is a drop-in replacement for the core-components original, with `name` promoted to a required prop; the binding reads/writes formik state via `useField(name)` and forwards everything else to the original component untouched.
 
-Both `formik` and `@alfalab/core-components` are peer dependencies (core-components is pinned to `>=48.0.0 <50.0.0`) — they are devDependencies here only so tests and builds can run.
+Both `formik` and `@alfalab/core-components` are peer dependencies (core-components is pinned to `>=48.0.0 <51.0.0`) — they are devDependencies here only so tests and builds can run.
 
 ## Commands
 
@@ -49,6 +49,10 @@ There is no barrel entry point. Every component is imported from its own subpath
 1. `src/<Name>/index.tsx` (+ its test)
 2. an entry in `files` in `package.json`
 3. an entry in `exports` in `package.json` with both `types` and `import`
+
+### Babel config and ESM dependencies
+
+Babel is configured via **`babel.config.json` (a root config), not `.babelrc`** — deliberately. A file-relative `.babelrc` does not apply to files under `node_modules`, and `uuid` (pulled in transitively by `@alfalab/hooks`) is ESM-only from v14 on. Jest's `transformIgnorePatterns` exempts `uuid` so babel can transpile it to CJS; that exemption only works with a root config. Don't convert back to `.babelrc`, and widen the `transformIgnorePatterns` allowlist if another ESM-only transitive dependency starts failing to parse in tests.
 
 ## Testing conventions
 
